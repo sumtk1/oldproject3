@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_my_wodezhifubao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_head" />
+
+
+    <ListView
+        android:id="@+id/lv_my_zhifubao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_titlebar"
+        android:layout_marginTop="26px"
+        android:divider="@color/cl_background"
+        android:dividerHeight="26px"
+        android:paddingBottom="30px" />
+
+</RelativeLayout>

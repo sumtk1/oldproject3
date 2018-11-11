@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toptitle_rl"
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:background="#f9f9f9">
+
+        <ImageView
+            android:id="@+id/iv_shangpin_shangchuan_dahuo_dizhi_back"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/tv_toptitle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择发货地址"
+            android:textColor="@color/cl_include_head_title"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_shangpin_shangchuan_dahuo_dizhi_guanli"
+            android:layout_width="124px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="管理"
+            android:textColor="@color/cl_include_head_right"
+            android:textSize="32px" />
+
+        <View
+            style="@style/title_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="96px" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_shangpin_shangchuan_fahuo_dizhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toptitle_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:background="@color/cl_white"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_shangpin_shangchuan_fahuo_dizhi_none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include2"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150px"
+            android:src="@mipmap/meiyoudizhi" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:text="你还没有发货地址喔~" />
+
+        <Button
+            android:id="@+id/btn_shangpin_shangchuan_fahuo_dizhi_guanli"
+            android:layout_width="300px"
+            android:layout_height="80px"
+            android:layout_below="@+id/textView18"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50px"
+            android:background="@drawable/bg_btn_confirm"
+            android:text="添加发货地址"
+            android:textColor="@color/cl_white"
+            android:textSize="34px" />
+
+    </RelativeLayout>
+</RelativeLayout>

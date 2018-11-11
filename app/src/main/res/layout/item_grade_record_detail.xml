@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/cl_white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_record_detail_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/cl_333" />
+
+    <TextView
+        android:id="@+id/tv_record_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/iv_record_detail_img"
+        android:text="美素佳儿（Friso）金装幼儿配方奶粉 3段（1-3岁幼儿适用）900..."
+        android:textColor="@color/cl_333"
+        android:textSize="14sp" />
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffe1e2e3" />
+
+
+    <RatingBar
+        android:id="@+id/tv_record_detail_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:isIndicator="true"
+        android:layout_marginLeft="10dp"
+        style="@style/foodRatingBar"
+        android:layout_toRightOf="@+id/iv_record_detail_img"
+        android:layout_below="@+id/tv_record_detail_name"
+        android:layout_marginTop="18dp" />
+</RelativeLayout>

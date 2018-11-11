@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/im_shangpingxuanzhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20px"
+        android:src="@mipmap/icon_the_selected" />
+
+    <ImageView
+        android:id="@+id/im_shangping_tupian"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@+id/im_shangpingxuanzhong"
+        android:src="@mipmap/shangpin_dianpyu_tupian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20px"
+        android:layout_toRightOf="@+id/im_shangping_tupian">
+
+        <TextView
+            android:id="@+id/tv_shangping_mingcheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="夏装新品纯棉宽松高全变的肌肤i饿啊公开的纠纷阿拉斯加纷纷大幅纷纷反对" />
+
+        <TextView
+            android:id="@+id/tv_shangping_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shangping_mingcheng"
+            android:layout_marginTop="50px"
+            android:text="￥100"
+            android:textColor="@color/cl_red" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

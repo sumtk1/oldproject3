@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_head"
+        android:id="@+id/include"/>
+    <RelativeLayout
+        android:id="@+id/rl_bianji"
+        android:background="@color/cl_white"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:paddingLeft="32px"
+        android:layout_below="@+id/include"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:id="@+id/et_item_shangpin_miaoshu_bianji_miaoshu"
+            android:layout_marginTop="26px"
+            android:textSize="30px"
+            android:textColorHint="@color/cl_et_color_hint"
+            android:hint="请添加商品描述（上传图片请保持在200kb以内）"
+            android:text=""
+            android:maxLength="300"
+            android:background="@null"
+            />
+        <ImageView
+            android:layout_marginTop="28px"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:src="@mipmap/ic_miaoshu_addpic"
+            android:id="@+id/iv_item_shangpin_miaoshu__bianji_pic"
+            android:layout_below="@+id/et_item_shangpin_miaoshu_bianji_miaoshu"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_item_shangpin_miaoshu_del"
+            android:visibility="gone"
+            android:src="@mipmap/ic_shangpin_miaoshu_del"
+            android:layout_alignTop="@+id/iv_item_shangpin_miaoshu_pic"
+            android:layout_alignRight="@+id/iv_item_shangpin_miaoshu_pic"
+            android:layout_alignEnd="@+id/iv_item_shangpin_miaoshu_pic" />
+    </RelativeLayout>
+
+</RelativeLayout>

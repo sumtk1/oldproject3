@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gloiot.chatsdk.chatui.keyboard.XhsEmoticonsKeyBoard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/evaluation_ek_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/include_head" />
+
+        <com.gloiot.hygoSupply.widget.RefreshLayout
+            android:id="@+id/refreshlayout_evaluation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include"
+            android:divider="@color/cl_background">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_user_evaluation"
+                android:layout_width="match_parent"
+                android:background="@color/cl_white"
+                android:layout_height="wrap_content" />
+        </com.gloiot.hygoSupply.widget.RefreshLayout>
+    </LinearLayout>
+</com.gloiot.chatsdk.chatui.keyboard.XhsEmoticonsKeyBoard>

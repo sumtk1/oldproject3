@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_shangpin_leixing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray">
+
+    <include
+        android:id="@+id/include14"
+        layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_shangpinleixing_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include14"
+        android:layout_marginTop="30px"
+        android:background="@color/cl_white"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="96px"
+            android:gravity="center"
+            android:text="实物商品"
+            android:textColor="@color/cl_black"
+            android:textSize="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="96px"
+            android:layout_marginRight="32px"
+            android:layout_toLeftOf="@+id/fl_shangpinleixing_shiwu"
+            android:gravity="center"
+            android:text="物流发货"
+            android:textColor="@color/cl_666"
+            android:textSize="30px" />
+
+        <FrameLayout
+            android:id="@+id/fl_shangpinleixing_shiwu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/iv_shangpinleixing_shiwu"
+                android:layout_width="44px"
+                android:layout_height="96px"
+
+                android:gravity="center"
+                android:src="@mipmap/ic_shangpinleixing_check" />
+        </FrameLayout>
+
+
+        <View
+            android:id="@+id/vi_shangpinshangchuang_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/fl_shangpinleixing_shiwu"
+            android:background="@color/cl_bg_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="96px"
+            android:layout_below="@+id/vi_shangpinshangchuang_divider"
+
+            android:gravity="center"
+            android:text="电子卡卷"
+            android:textColor="@color/cl_black"
+            android:textSize="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="96px"
+            android:layout_below="@+id/vi_shangpinshangchuang_divider"
+            android:layout_marginRight="32px"
+            android:layout_toLeftOf="@+id/fl_shangpinleixing_dianzi"
+
+            android:gravity="center"
+            android:text="无需物流"
+            android:textColor="@color/cl_666"
+            android:textSize="30px" />
+
+        <FrameLayout
+            android:id="@+id/fl_shangpinleixing_dianzi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/vi_shangpinshangchuang_divider">
+
+            <ImageView
+                android:id="@+id/iv_shangpinleixing_dianzi"
+                android:layout_width="44px"
+                android:layout_height="96px"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_shangpinleixing_check"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_shangpinleixing_shiwumiaoshu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_shangpinleixing_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="50px"
+        android:text="*实物商品：买家下单后卖家需要选择物流公司并安排发货。"
+        android:textColor="@color/cl_666"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/tv_shangpinleixing_dianzimiaoshu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_shangpinleixing_shiwumiaoshu"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="26px"
+        android:text="*电子卡卷：买家下单后获取订单的电子凭证，卖家无需发货。"
+        android:textColor="@color/cl_666"
+        android:textSize="24px" />
+</RelativeLayout>

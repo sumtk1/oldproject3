@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/include_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_payee_img1"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:background="@mipmap/ic_portrait_default"/>
+
+        <TextView
+            android:id="@+id/tv_payee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="用户名"
+            android:textColor="@color/black"
+            android:textSize="32px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="99px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:gravity="center_vertical"
+                android:text="转账金额"
+                android:textColor="#666666"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tv_01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="188px"
+                android:gravity="center_vertical"
+                android:text="￥"
+                android:textColor="#333333"
+                android:textSize="30px" />
+
+            <EditText
+                android:id="@+id/et_amount_collected"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_01"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:gravity="center_vertical"
+                android:textColor="#333333" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e0e0e0"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="99px"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:gravity="center_vertical"
+                android:text="代付账户"
+                android:textColor="#666666"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tv_settlement_zhanhu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="180px"
+                android:gravity="center_vertical"
+                android:text="积分账户"
+                android:textColor="#333333"
+                android:textSize="30px" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e0e0e0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="99px"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:gravity="center_vertical"
+                android:text="备注"
+                android:textColor="#666666"
+                android:textSize="30px" />
+
+            <EditText
+                android:id="@+id/edit_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="90px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="不超过20个字符(非必填)"
+                android:textColor="#333333"
+                android:maxLength="20"
+                android:textColorHint="#b4b4b4"
+                android:textSize="30px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_bg_click1"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="200px"
+        android:background="@drawable/bg_btn_confirm"
+        android:text="確定"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

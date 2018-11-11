@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:orientation="horizontal"
+            android:id="@+id/ll_fg_ddgl_head_view"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_error_flag"
+                android:layout_marginLeft="30px"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/tv_fg_ddgl_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                android:text=""
+                />
+        </LinearLayout>
+
+        <com.gloiot.hygoSupply.widget.RefreshLayout
+            android:id="@+id/refreshlayout_fg_dingdan_guanli_quanbu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/lv_fg_dingdan_guanli_quanbu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:dividerHeight="20px" />
+        </com.gloiot.hygoSupply.widget.RefreshLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_dingdan_guanli_zanwu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout7"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_hongli_mingxi_no_zhangdan_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_zanwu_dingdan" />
+
+        <TextView
+            android:id="@+id/tv_hongli_mingxi_no_zhangdan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_hongli_mingxi_no_zhangdan_img"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40px"
+            android:text="暂无订单"
+            android:textColor="#666"
+            android:textSize="32px" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/include_head_white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_title"
+        android:background="@color/cl_background">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.youth.banner.Banner
+                android:id="@+id/kefu_banner"
+                android:layout_width="match_parent"
+                android:layout_height="320px" />
+
+            <LinearLayout
+                android:id="@+id/ll_kehu_fuwu"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_below="@+id/kefu_banner"
+                android:paddingLeft="30px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="5px"
+                    android:layout_height="30px"
+                    android:background="@color/cl_2b9ced" />
+                <TextView
+                    android:id="@+id/tv_kehu_fuwu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:text="客服服务"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <com.zyd.wlwsdk.utlis.LinesGridView
+                android:id="@+id/kefu_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_kehu_fuwu"
+                android:background="@color/cl_white" />
+
+            <LinearLayout
+                android:id="@+id/ll_kefu_wenti"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_below="@+id/kefu_gridView"
+                android:layout_marginLeft="30px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="5px"
+                    android:layout_height="30px"
+                    android:background="@color/cl_2b9ced" />
+
+                <TextView
+                    android:id="@+id/tv_changjian_wenti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:text="常见问题"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/kefu_wenti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_kefu_wenti"
+                android:background="@color/cl_white" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

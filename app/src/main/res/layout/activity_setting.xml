@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background">
+
+    <include layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toptitle_rl"
+        android:layout_marginTop="30px">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_zhifumima"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@android:color/white"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:id="@+id/tv_setting_zfmm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="fill_vertical"
+                    android:text="设置支付密码"
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+
+                <ImageView
+                    android:id="@+id/iv_setting_zfmm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_gengduo" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_view" />
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_gerenxinxi"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@android:color/white"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="fill_vertical"
+                    android:text="设置退货地址"
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_gengduo" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_view" />
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_anquanshezhi"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@android:color/white"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="账户与安全"
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_gengduo" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_view" />
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_qingchuhuancun"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:background="@android:color/white"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="清除缓存"
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/tv_setting_huancun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#666"
+                    android:textSize="28px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_guanyuwomen"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginTop="30px"
+                android:background="@android:color/white"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="关于我们"
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_gengduo" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_setting_SwitchAccount"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_above="@+id/btn_setting_loginout"
+        android:layout_marginBottom="40px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="170px"
+        android:background="@drawable/bg_btn_confirm_radius_white"
+        android:text="账号切换"
+        android:textColor="@color/cl_ff7f29"
+        android:textSize="36px" />
+
+    <Button
+        android:id="@+id/btn_setting_loginout"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/bg_btn_confirm_radius"
+        android:text="退出当前账号"
+        android:textColor="@color/cl_white"
+        android:textSize="36px" />
+</RelativeLayout>

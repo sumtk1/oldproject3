@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ff7f29</color>
+    <color name="colorPrimaryDark">#ff7f29</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="cl_red">#c01923</color>
+    <color name="cl_bg_gray">#e7e7e7</color>
+    <color name="cl_bg_view">#e1e2e3</color>
+    <color name="cl_white">#ffffff</color>
+    <color name="cl_black">#000000</color>
+
+
+
+    //所有界面背景色
+    <color name="cl_background">#f5f6f7</color>
+    <color name="cl_text">#333</color>
+    <color name="cl_eee">#EEE</color>
+    <color name="cl_999">#999</color>
+    <color name="cl_666">#666</color>
+    <color name="cl_333">#333</color>
+    <color name="cl_e1e2e3">#e1e2e3</color>
+
+    <color name="cl_ff6666">#ff6666</color>
+    <color name="cl_29b69d">#29b69d</color>
+
+    <!--输入框提示文字-->
+    <color name="cl_et_color">#000</color>
+    <!--输入框文字颜色-->
+    <color name="cl_et_color_hint">#999</color>
+    <!--选择照片文字颜色-->
+    <color name="cl_selector_text">#FF2E0D</color>
+    <!--dialog确定按钮按下颜色-->
+    <color name="cl_dialog_btn_confirm_normal">#FFF</color>
+    <color name="cl_dialog_btn_confirm_pressed">#F6F6F6</color>
+    <!--dialog取消按钮按下颜色-->
+    <color name="cl_dialog_btn_cancel_normal">#666</color>
+    <color name="cl_dialog_btn_cancel_pressed">#5D5D5D</color>
+    <!--公用按钮确定按钮按下颜色-->
+    <color name="cl_btn_confirm_normal">#FF2E0D</color>
+    <color name="cl_btn_confirm_pressed">#F22100</color>
+    <!--界面主颜色-->
+    <color name="cl_activity_main">#FF2E0D</color>
+
+    <!--界面主颜色-->
+    <color name="cl_activity_newmain">#ff7f29</color>
+    <!--头部标题文字颜色-->
+    <color name="cl_include_head_title">#2A2929</color>
+    <!--头部右侧文字颜色-->
+    <color name="cl_include_head_right">#666</color>
+    <!--头部右侧文字颜色-->
+    <color name="cl_all_text">#000</color>
+
+    <color name="cl_huoqu_yanzhengma">#FF2E0D</color>
+    <!--dialog确定按钮的浅色和深色-->
+    <color name="confirmButton_shallow">#FF2E0D</color>
+    <color name="confirmButton_deep">#F22100</color>
+    <!--dialog取消按钮的浅色和深色-->
+    <color name="cancelButton_shallow">#363738</color>
+    <color name="cancelButton_deep">#404142</color>
+    <!--钱的颜色 -->
+    <color name="cl_money">#E33333</color>
+    <color name="cl_dingdan_binahao">#FF5252</color>
+    <color name="cl_tianjia_guige_btn">#FF7f29</color>
+    <!--新的标题栏的分割线-->
+    <color name="cl_title_divider">#bfbfbf</color>
+
+    <color name="cl_ff7f29">#ff7f29</color>
+
+    <color name="rc_notice_text">#999999</color>
+
+    <!-- 分享的字体颜色-->
+    <color name="share_txt_color">#333333</color>
+
+    <!-- 下架的默认背景色-->
+    <color name="xiajia_default_bg">#cccccc</color>
+    <color name="color_bg_gray">#e7e7e7</color>
+
+    <!-- 横线的背景颜色-->
+    <color name="cl_eeeeee">#eeeeee</color>
+    <color name="cl_ff4e44">#ff4e44</color>
+    <color name="cl_ff980b">#ff980b</color>
+
+
+
+    <color name="ebebeb">#ebebeb</color>
+    <color name="b4b4b4">#B4B4B4</color>
+    <color name="cl_ff8c51">#ff8c51</color>
+
+    <color name="cl_3faaf0">#3FAAF0</color>
+</resources>

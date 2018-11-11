@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="1dp"
+    android:layout_height="43dp">
+
+    <EditText
+        android:id="@+id/et_item_add_specifications_data"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:minWidth="96dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_add_specifications_et"
+        android:gravity="center"
+        android:text="红色"
+        android:textColor="#ffff7f29"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/iv_item_add_specifications_delete"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="top|right"
+        android:src="@mipmap/ic_add_specifications_delete" />
+</FrameLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_head" />
+
+    <ListView
+        android:id="@+id/lv_wuliu_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/in_titlebar"
+        android:layout_marginBottom="30px"
+        android:divider="@null"/>
+    <LinearLayout
+        android:id="@+id/ll_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/in_titlebar"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="238px"
+            android:layout_height="212px"
+            android:layout_marginTop="350px"
+            android:src="@mipmap/ic_no_message" />
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text=""
+            android:textColor="#666666"
+            android:textSize="24px" />
+    </LinearLayout>
+</RelativeLayout>

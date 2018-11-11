@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_renzhengbiaozhunxize_item"
+        android:layout_width="match_parent"
+        android:background="@color/cl_white"
+        android:layout_height="96px"
+        android:layout_marginTop="30px">
+        <TextView
+            android:id="@+id/tv_item_biaozhun"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center"
+            android:text="开店基础资质"
+            android:textColor="@color/cl_black"
+            android:textSize="32px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/ic_renzheng_biaozhun_go" />
+    </RelativeLayout>
+
+
+</LinearLayout>

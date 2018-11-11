@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal"
+        android:background="@color/cl_white"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_dingdan_xiangqing_shouhuo"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="32px"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="收货信息"
+            android:textSize="14sp"
+            android:textColor="@color/cl_333333"
+            android:layout_marginLeft="18px"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="28px"
+        android:background="@color/cl_white"
+        android:layout_marginTop="1px"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_DDXX_shouhuoren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/cl_black"
+            android:layout_marginTop="24px"
+            />
+
+        <TextView
+            android:id="@+id/tv_DDXX_shagnjiadianhua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/cl_black"
+            android:layout_toRightOf="@+id/tv_DDXX_shangjiamingchen"
+            android:layout_marginTop="26px"
+            android:layout_marginLeft="32px"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_DDXX_shagnjiadizhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cl_white"
+        android:textSize="14sp"
+        android:textColor="@color/cl_333333"
+        android:layout_below="@+id/tv_DDXX_shangjiamingchen"
+        android:paddingTop="24px"
+        android:paddingBottom="30px"
+        android:paddingLeft="28px"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal"
+        android:background="@color/cl_white"
+        android:layout_marginTop="24px"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_dingdan_xiangqing_dingdan"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="32px"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="订单信息"
+            android:textSize="14sp"
+            android:textColor="@color/cl_333333"
+            android:layout_marginLeft="18px"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

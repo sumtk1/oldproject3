@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/interceptClickRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rclv_tianjia_shangpin_guige"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_tianjia_shangpin_guige_queding"
+        android:layout_below="@+id/relativeLayout7"
+        android:layout_marginBottom="26px"
+        android:layout_marginTop="26px"
+        android:background="@color/cl_background"
+        android:descendantFocusability="blocksDescendants" />
+
+
+    <Button
+        android:id="@+id/btn_tianjia_shangpin_guige_queding"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="start"
+        android:background="@color/cl_white"
+        android:drawableLeft="@mipmap/btn_leibie_xinzheng_new"
+        android:paddingLeft="272px"
+        android:text="新增规格"
+        android:textAlignment="textStart"
+        android:textColor="@color/cl_tianjia_guige_btn"
+        android:textSize="36px"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/iv_shangpin_guige_back"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@mipmap/btn_back_guige" />
+
+        <TextView
+            android:id="@+id/tv_toptitle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="规格"
+            android:textColor="@color/cl_include_head_title"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_shangpin_guige_fabu"
+            android:layout_width="95px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/cl_include_head_right"
+            android:textSize="34px"
+            android:visibility="gone" />
+
+        <View
+            style="@style/title_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="96px"
+            android:background="@color/cl_title_divider"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>

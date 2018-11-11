@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_shangpin_fenlei_sousuo"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/cl_white">
+
+        <ImageView
+            android:id="@+id/iv_toptitle_back"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/tv_sousuo"
+            android:layout_width="80px"
+            android:layout_height="100px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8px"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/cl_666666"
+            android:textSize="28px" />
+
+        <RelativeLayout
+            android:layout_width="500px"
+            android:layout_height="70px"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10px"
+            android:layout_marginRight="8px"
+            android:layout_marginTop="4px"
+            android:layout_toLeftOf="@+id/tv_sousuo"
+            android:layout_toRightOf="@id/iv_toptitle_back"
+            android:background="@drawable/bg_sousuo"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:id="@+id/img_sousuo"
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="33px"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="10px"
+                android:src="@mipmap/ic_sousuo" />
+
+            <EditText
+                android:id="@+id/et_sousuo_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_toRightOf="@id/img_sousuo"
+                android:background="@null"
+                android:hint="搜索"
+                android:maxLines="1"
+                android:textColor="@color/cl_999999"
+                android:textColorHint="@color/cl_999999"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/vw_xian"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/rl_shangpin_fenlei_sousuo"
+        android:background="@color/cl_bg_view" />
+
+    <LinearLayout
+        android:id="@+id/ll_fenlei_biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/vw_xian"
+        android:background="@color/cl_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_fenlei_zonghe"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_fenlei_zonghe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="综合"
+                android:textColor="@color/cl_E33333"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/iv_fenlei_zonghe"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_marginLeft="12px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_fenlei_zonghe" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fenlei_xiaoliang"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_fenlei_xiaoliang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="销量"
+                android:textColor="@color/cl_333333"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fenlei_jiage"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_fenlei_jiage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格"
+                android:textColor="@color/cl_333333"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/iv_fenlei_jiage"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_marginLeft="12px"
+                android:src="@mipmap/ic_fenlei_jiage0" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.gloiot.hygoSupply.widget.RefreshLayout
+        android:id="@+id/refreshlayout_fg_shangpin_guanli"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/but_save_lianjie"
+        android:layout_below="@+id/ll_fenlei_biaoti"
+        android:background="#f5f6f7">
+
+        <ListView
+            android:id="@+id/lv_shangpinglianjie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.gloiot.hygoSupply.widget.RefreshLayout>
+
+    <Button
+        android:id="@+id/but_save_lianjie"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="保 存"
+        android:textColor="@color/cl_white"
+        android:textSize="32px" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_no_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_fenlei_biaoti"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px">
+
+        <ImageView
+            android:id="@+id/iv_hongli_mingxi_no_zhangdan_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_zanwu_shangpin"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_hongli_mingxi_no_zhangdan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_hongli_mingxi_no_zhangdan_img"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="90px"
+            android:layout_marginTop="40px"
+            android:text="暂无商品"
+            android:textColor="#666"
+            android:textSize="32px"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</RelativeLayout>

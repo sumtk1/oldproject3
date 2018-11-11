@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/cl_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20px"
+                android:gravity="center_vertical"
+                android:text="姓名"
+                android:textColor="@color/cl_666666"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_add_alipay_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:text="水电费控件但是看见附件"
+                android:textColor="@color/cl_333333"
+                android:textSize="32px" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="30px"
+            android:background="@color/cl_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20px"
+                android:gravity="center_vertical"
+                android:text="支付宝账号"
+                android:textColor="@color/cl_666666"
+                android:textSize="32px" />
+
+            <EditText
+                android:id="@+id/et_add_alipay_zhanghao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="请输入支付宝账号"
+                android:maxLines="1"
+                android:textColor="@color/cl_333333"
+                android:textSize="32px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:text="注：支付宝账号的实名认证信息必须与该姓名一致"
+        android:textColor="@color/cl_666666"
+        android:textSize="24px" />
+
+    <Button
+        android:id="@+id/btn_add_alipay_confirm"
+        android:layout_width="660px"
+        android:layout_height="96px"
+        android:textColor="@color/cl_white"
+        android:background="@drawable/bg_btn_confirm_radius"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="170px"
+        android:text="确定" />
+
+</LinearLayout>

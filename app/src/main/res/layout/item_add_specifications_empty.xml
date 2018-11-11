@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="96dp"
+    android:layout_height="34dp"
+    android:layout_marginLeft="9dp"
+    android:layout_marginRight="9dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/cl_eee"
+    android:gravity="center"
+    android:hint=""
+    android:imeOptions="actionDone"
+    android:inputType="text"
+    android:maxLines="1"
+    android:imeActionLabel="添加"
+    android:textColor="#ffff7f29"
+    android:textColorHint="@color/cl_999"
+    android:textSize="13dp" />

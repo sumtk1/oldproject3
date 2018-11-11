@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cl_white">
+
+
+    <ImageView
+        android:id="@+id/iv_location_icon"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/credit_code" />
+
+    <TextView
+        android:id="@+id/tv_after_sale_buyerinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/iv_location_icon"
+        android:text=""
+        android:textColor="@color/cl_333"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv_after_sale_buyeraddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_after_sale_buyerinfo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_location_icon"
+        android:text=""
+        android:textColor="@color/cl_666"
+        android:textSize="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/tv_after_sale_buyeraddress"
+        android:layout_marginTop="13dp"
+        android:background="#f5f6f7" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:background="#f5f6f7" />
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_dizhi_xuanze"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dizhi_xuanze"
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:layout_below="@+id/RelativeLayout2">
+
+        <ImageView
+            android:id="@+id/iv_dizhi_liebiao_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/tv_dizhi_xuanze_firstfield"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/iv_dizhi_liebiao_back"
+            android:gravity="center"
+            android:text="省"
+            android:textColor="@color/cl_include_head_title"
+            android:textSize="36px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_dizhi_xuanze_secondfield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="市"
+            android:textColor="@color/cl_include_head_title"
+            android:textSize="36px"
+            android:textStyle="bold" />
+
+
+        <View
+            style="@style/title_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="96px" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_dizhi_liebiao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_dizhi_xuanze"
+        android:background="@color/cl_white"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cl_background">
+
+    <include layout="@layout/include_head_white" />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           android:id="@+id/tv_01"
+           android:layout_width="match_parent"
+           android:layout_height="60px"
+           android:paddingLeft="30px"
+           android:gravity="center_vertical"
+           android:text="当前城市"
+           android:textColor="@color/cl_999999"
+           android:textSize="26px" />
+       <LinearLayout
+           android:id="@+id/ll_location"
+           android:layout_width="match_parent"
+           android:layout_height="80px"
+           android:layout_below="@+id/tv_01"
+           android:background="@android:color/white"
+           android:paddingLeft="30px"
+           android:orientation="horizontal">
+           <ImageView
+               android:layout_width="28px"
+               android:layout_height="35px"
+               android:layout_gravity="center_vertical"
+               android:src="@mipmap/ic_location"/>
+           <TextView
+               android:id="@+id/tv_location_city"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="30px"
+               android:gravity="center_vertical"
+               android:text="定位中"
+               android:textColor="@color/cl_666666"
+               android:textSize="26px" />
+       </LinearLayout>
+       <TextView
+           android:id="@+id/tv_02"
+           android:layout_width="match_parent"
+           android:layout_height="60px"
+           android:paddingLeft="30px"
+           android:layout_below="@+id/ll_location"
+           android:gravity="center_vertical"
+           android:text="全部"
+           android:textColor="@color/cl_999999"
+           android:textSize="26px" />
+
+       <ExpandableListView
+           android:id="@+id/exListView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@+id/tv_02"
+           android:groupIndicator="@null"
+           android:dividerHeight="1px"/>
+   </RelativeLayout>
+
+</LinearLayout>

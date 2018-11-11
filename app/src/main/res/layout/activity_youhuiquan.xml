@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zyd.wlwsdk.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:divider="@color/cl_background"
+    >
+
+    <include
+        android:id="@+id/include11"
+        layout="@layout/include_two_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chuangjiancoupon"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cl_white">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#D9D9D9"
+            />
+
+        <ImageView
+            android:id="@+id/im_youhuiquantianjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="255px"
+            android:src="@mipmap/ic_coupon_tianjia" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25px"
+            android:layout_toRightOf="@+id/im_youhuiquantianjia"
+            android:text="创建优惠券"
+            android:textColor="#FF7F29"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+
+    <com.gloiot.hygoSupply.widget.RefreshLayout
+        android:id="@+id/refreshlayout_youhuiquan"
+        android:layout_above="@+id/rl_chuangjiancoupon"
+        android:layout_below="@+id/include11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/cl_background"
+        >
+        <ListView
+            android:id="@+id/lv_youhuiquan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="20px"
+            android:divider="@color/cl_background"
+            />
+    </com.gloiot.hygoSupply.widget.RefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_youhuiquan_zanwu"
+        android:layout_below="@+id/include11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160px"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/iv_youhuiquan_no_zhangdan_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/youhuiquan_kongbai" />
+
+        <TextView
+            android:id="@+id/tv_youhuiquan_no_zhangdan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_youhuiquan_no_zhangdan_img"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="50px"
+            android:text="暂无优惠券"
+            android:textColor="@color/cl_999999"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+</com.zyd.wlwsdk.autolayout.AutoRelativeLayout>

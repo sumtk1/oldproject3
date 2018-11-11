@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:background="@drawable/bg_circular_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/im_post_neirongtupian"
+                android:layout_width="240px"
+                android:layout_height="240px"
+                android:layout_marginTop="31px" />
+
+            <TextView
+                android:id="@+id/tv_post_neirongbiaoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="31px"
+                android:layout_marginRight="55px"
+                android:layout_marginTop="83px"
+                android:text="春夏折扣 ZARA 女鞋 真皮粗跟高跟鞋"
+                android:textColor="@color/black"
+                android:textSize="28px" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_post_neirongmiaoshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28px"
+            android:text="本款鞋面选用舒适羊翻皮面料，触感柔软细腻，透气性好，脚舒适自然很有品质感。采用加厚中底板，穿着舒适 ·宽松的款型，呈现出优美的垂坠质感。 ·具有立体感的领部设计，有助于给人留下清爽印象。 ·清新的款式，商务休闲两相宜。 ·是一款富有女性魅力的百搭单品。"
+            android:textSize="24px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="33px"
+            android:background="@color/cl_bg_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="23px"
+            android:layout_marginRight="24px"
+            android:layout_marginTop="23px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/im_post_bianji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_post_bianji" />
+
+            <ImageView
+                android:id="@+id/im_post_shuanchu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23px"
+                android:src="@mipmap/ic_post_shanchu" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

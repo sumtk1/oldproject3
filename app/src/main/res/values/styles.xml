@@ -1,0 +1,128 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <!-- Customize your theme here. -->
+        <!--导航栏的颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--状态栏的颜色-->
+        <item name="colorPrimaryDark">@color/cl_white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+    </style>
+
+    <!-- 二维码页面橙色主题-->
+    <style name="OrangeTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--标题分割线-->
+    <style name="title_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#c9c9c9</item>
+    </style>
+
+    <!--标题分割线-->
+    <style name="buju_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2px</item>
+        <item name="android:background">#e1e2e3</item>
+    </style>
+
+    <!--文字头样式-->
+    <style name="style_all_tv">
+        <item name="android:textColor">@color/cl_all_text</item>
+        <item name="android:textSize">32px</item>
+    </style>
+    <!--输入提示样式-->
+    <style name="style_all_et">
+        <item name="android:textColor">@color/cl_et_color</item>
+        <item name="android:textSize">32px</item>
+        <item name="android:textColorHint">@color/cl_et_color_hint</item>
+        <item name="android:textCursorDrawable">@drawable/color_edittext</item>
+    </style>
+
+    <!-- 蓝色按钮样式-->
+    <style name="btn_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90px</item>
+        <item name="android:background">@color/cl_activity_newmain</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30px</item>
+
+    </style>
+
+    <style name="my_backcard_del">
+        <item name="android:background">@color/cl_btn_confirm_normal</item>
+    </style>
+
+    <!-- dialog对话框样式-->
+    <style name="dialog_untran" parent="dialog_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- dialog对话框样式-->
+    <style name="dialog_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="anim_popup_dir">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+    //设置EditText的标签颜色
+
+    <style name="edittext_guanbiaoColor">
+        <item name="android:textCursorDrawable">@drawable/color_edittext</item>
+    </style>
+
+    <!--检测版本更新的style-->
+    <style name="dialogshow" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>   <!-- 窗体背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>   <!-- Activity模糊 -->
+    </style>
+
+    <style name="heng_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="heng_line_e1e2e3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2px</item>
+        <item name="android:background">#e1e2e3</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/cl_black</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">22dp</item>
+        <item name="android:maxHeight">22dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

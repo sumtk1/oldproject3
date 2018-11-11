@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <include
+        android:id="@+id/include8"
+        layout="@layout/include_head"></include>
+
+
+    <LinearLayout
+        android:id="@+id/shangpin_guanli_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cl_white"
+            >
+
+            <ImageView
+                android:id="@+id/iv_dandu_fahuo_shangpin_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30px"
+                android:paddingRight="16px"
+                android:src="@mipmap/icon_not_to_choose"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"
+                android:textSize="32px"
+                android:textColor="@color/share_txt_color"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_dandu_fahuo_shangpin_img"
+                />
+        </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_dandu_fahuo_sure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="26px"
+                android:text="确认发货"
+                android:textSize="32px"
+                android:paddingRight="26px"
+                android:textColor="@color/cl_white"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:background="@color/cl_ff7f29"
+                />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_dandu_fahuo_shangpin"
+        android:layout_below="@+id/include8"
+        android:layout_above="@+id/shangpin_guanli_bottom"
+        />
+</RelativeLayout>

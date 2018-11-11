@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_bindban_kcard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_titlebar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20px">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:text="银行卡信息"
+                        android:textColor="#666666"
+                        android:textSize="28px" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_bankname"
+                        android:layout_width="match_parent"
+                        android:layout_height="96px"
+                        android:paddingLeft="30px">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/color_bg_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="选择银行"
+                            android:textColor="#666666"
+                            android:textSize="32px" />
+
+                        <TextView
+                            android:id="@+id/tv_bank_02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20px"
+                            android:layout_toLeftOf="@+id/iv_04"
+                            android:gravity="center|right"
+                            android:hint="请选择银行卡"
+                            android:textColor="#666666"
+                            android:textSize="30px" />
+
+                        <ImageView
+                            android:id="@+id/iv_04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30px"
+                            android:src="@mipmap/ic_arrow_right" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="96px"
+                        android:paddingLeft="30px">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/color_bg_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="卡号"
+                            android:textColor="#666666"
+                            android:textSize="32px" />
+
+                        <EditText
+                            android:id="@+id/tv_bank_05"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/tv_02"
+                            android:background="@null"
+                            android:gravity="right|center"
+                            android:hint="请输入卡号"
+                            android:inputType="number"
+                            android:paddingRight="30px"
+                            android:textColor="#666666"
+                            android:textColorHint="@color/b4b4b4"
+                            android:textSize="30px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_bank_tv_cardtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="96px"
+                        android:paddingLeft="30px">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/color_bg_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_cardtype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="卡类型"
+                            android:textColor="#666666"
+                            android:textSize="32px" />
+
+                        <TextView
+                            android:id="@+id/tv_bank_06"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30px"
+                            android:text="储蓄卡"
+                            android:textColor="#666666"
+                            android:textSize="30px" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_01"
+                    android:layout_marginBottom="16px"
+                    android:layout_marginLeft="36px"
+                    android:layout_marginTop="16px"
+                    android:text="持卡人信息"
+                    android:textColor="#666666"
+                    android:textSize="28px" />
+
+                <LinearLayout
+                    android:id="@+id/ll_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_01"
+                    android:layout_marginTop="64px"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="96px"
+                        android:paddingLeft="30px">
+
+                        <TextView
+                            android:id="@+id/tv_03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="持卡人姓名"
+                            android:textColor="#666666"
+                            android:textSize="32px" />
+
+                        <TextView
+                            android:id="@+id/tv_bank_07"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/tv_03"
+                            android:background="@null"
+                            android:gravity="right|center"
+                            android:hint="请输入持卡人姓名"
+                            android:paddingRight="30px"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textColorHint="@color/b4b4b4"
+                            android:textSize="30px" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="96px"
+                        android:paddingLeft="30px">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/color_bg_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_06"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="电话号码"
+                            android:textColor="#666666"
+                            android:textSize="32px" />
+
+                        <TextView
+                            android:id="@+id/tv_bank_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/tv_06"
+                            android:background="@null"
+                            android:gravity="right|center"
+                            android:hint="请输入注册时的电话号码"
+                            android:inputType="number"
+                            android:paddingRight="30px"
+                            android:textColor="#666666"
+                            android:textColorHint="@color/b4b4b4"
+                            android:textSize="30px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="96px"
+                        android:paddingLeft="30px">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/color_bg_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_07"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="验证码"
+                            android:textColor="#666666"
+                            android:textSize="32px" />
+
+                        <EditText
+                            android:id="@+id/tv_bank_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30px"
+                            android:layout_toLeftOf="@+id/tv_getYZM"
+                            android:layout_toRightOf="@+id/tv_07"
+                            android:background="@null"
+                            android:gravity="right|center"
+                            android:hint="请输入验证码"
+                            android:textColor="#666666"
+                            android:textColorHint="@color/b4b4b4"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/tv_getYZM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="30px"
+                            android:gravity="center_vertical"
+                            android:text="点击获取验证码"
+                            android:textColor="#48a0dc"
+                            android:textSize="30px" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_bindbankCard_next"
+                    style="@style/btn_main"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/ll_02"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="50px"
+                    android:text="确 认" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_dynamic_product_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50px"
+            android:paddingLeft="26px"
+            android:paddingTop="80px"
+            android:src="@mipmap/icon_not_to_choose" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="208px"
+            android:layout_marginLeft="26px"
+            android:layout_toRightOf="@+id/iv_dynamic_product_choice">
+
+            <ImageView
+                android:id="@+id/iv_dynamic_product_picture"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:layout_marginTop="28px"
+                />
+
+            <TextView
+                android:id="@+id/tv_dynamic_product_name"
+                android:layout_width="380px"
+                android:layout_height="70px"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="28px"
+                android:layout_toRightOf="@+id/iv_dynamic_product_picture"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tv_dynamic_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_dynamic_product_name"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@+id/iv_dynamic_product_picture"
+                android:textColor="#999"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

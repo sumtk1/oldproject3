@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background">
+
+    <include
+        android:id="@+id/include9"
+        layout="@layout/include_head" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="298px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include9"
+        android:background="@color/cl_white"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/iv_dingdan_xiangqing_touxiang"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30px"
+            android:src="@mipmap/ic_shanchu" />
+
+        <TextView
+            android:id="@+id/tv_dingdan_xiangqing_nicheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView19"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14px"
+            android:text=""
+            android:textColor="#666"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/tv_dingdan_xiangqing_jine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25px"
+            android:layout_toEndOf="@+id/textView30"
+            android:layout_toRightOf="@+id/textView30"
+            android:text="+0.00"
+            android:textColor="@color/cl_black"
+            android:textSize="54px"></TextView>
+
+        <TextView
+            android:id="@+id/tv_dingdan_xiangqing_zhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="28px"
+            android:layout_marginTop="17px"
+            android:layout_toEndOf="@+id/textView30"
+            android:layout_toRightOf="@+id/textView30"
+            android:text=""
+            android:textColor="@color/cl_activity_newmain"
+            android:textSize="26px"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_marginTop="10px"
+        android:background="@color/cl_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="30px">
+
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="24px"
+                android:text="商品说明"
+                android:textColor="#666" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView33"
+                android:layout_marginTop="27px"
+                android:text="收货地址"
+                android:textColor="#666" />
+
+            <TextView
+                android:id="@+id/tv_dingdan_xiangqing_shuoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView33"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="20px"
+                android:layout_toRightOf="@id/textView33"
+                android:ellipsize="end"
+                android:gravity="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/tv_dingdan_xiangqing_dizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_dingdan_xiangqing_shuoming"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="27px"
+                android:layout_toRightOf="@id/textView34"
+                android:gravity="end"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="26px" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/include_view" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="9px"
+            android:paddingLeft="30px">
+
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="26px"
+                android:text="创建时间"
+                android:textColor="#666" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView37"
+                android:layout_marginTop="28px"
+                android:text="订单号"
+                android:textColor="#666" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_dingdan_xiangqing_dingdanhao"
+                android:layout_marginTop="28px"
+                android:text="支付方式"
+                android:textColor="#666" />
+
+            <TextView
+                android:id="@+id/tv_dingdan_xiangqing_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textView37"
+                android:layout_marginEnd="20px"
+                android:layout_marginRight="20px"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/tv_dingdan_xiangqing_dingdanhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tv_dingdan_xiangqing_time"
+                android:layout_alignRight="@+id/tv_dingdan_xiangqing_time"
+                android:layout_below="@+id/tv_dingdan_xiangqing_time"
+                android:layout_marginTop="28px"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/tv_dingdan_xiangqing_zhifu_fangshi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tv_dingdan_xiangqing_time"
+                android:layout_alignRight="@+id/tv_dingdan_xiangqing_time"
+                android:layout_alignTop="@+id/textView42"
+                android:text=""
+                android:textColor="#666"
+                android:textSize="26px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+

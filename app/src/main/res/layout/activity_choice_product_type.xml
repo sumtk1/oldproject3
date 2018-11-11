@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_shangpin_leixing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_product_type_physical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/include"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="11dp"
+        android:background="@mipmap/bg_product_type_physical">
+
+        <TextView
+            android:id="@+id/tv_product_type_physical_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="21dp"
+            android:text="实物商品"
+            android:textColor="#ffffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="23dp"
+            android:layout_toRightOf="@+id/tv_product_type_physical_txt"
+            android:text="物流发货"
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_product_type_physical_txt"
+            android:layout_marginLeft="54dp"
+            android:layout_marginRight="58dp"
+            android:layout_marginTop="13dp"
+            android:text="买家下单后，卖家需要选择物流公司并安排发货。"
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_product_type_physical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_product_type_chosen" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_product_type_virtual"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/rl_product_type_physical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/bg_product_type_virtual">
+
+        <TextView
+            android:id="@+id/tv_product_type_virtual_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="21dp"
+            android:text="电子卡券"
+            android:textColor="#ffffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="23dp"
+            android:layout_toRightOf="@+id/tv_product_type_virtual_txt"
+            android:text="无需物流"
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_product_type_virtual_txt"
+            android:layout_marginLeft="54dp"
+            android:layout_marginRight="58dp"
+            android:layout_marginTop="13dp"
+            android:text="家下单后获取订单的单子凭证，卖家无需发货。"
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_product_type_virtual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_product_type_chosen" />
+    </RelativeLayout>
+
+</RelativeLayout>

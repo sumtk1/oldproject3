@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_shangpingfenrun"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_fenrun_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include3"
+        android:background="@color/cl_white">
+
+        <TextView
+            android:id="@+id/tv_fenrun_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60px"
+            android:text="10000"
+            android:textColor="#FF7F29"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/tv_fenrun_zhanghu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fenrun_money"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:text="分润账户"
+            android:textColor="#333333"
+            android:textSize="26px" />
+
+        <View
+            android:id="@+id/vw_xian"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_fenrun_zhanghu"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="60px"
+            android:background="@color/cl_bg_gray" />
+
+        <TextView
+            android:id="@+id/tv_fenrun_shuoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vw_xian"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="24px"
+            android:paddingBottom="24px"
+            android:text="分润账户"
+            android:textColor="@color/cl_666"
+            android:textSize="26px" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fenrun_02"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_below="@+id/rl_fenrun_01"
+        android:layout_marginTop="24px"
+        android:background="@color/cl_white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:gravity="center_vertical"
+            android:text="分润记录"
+            android:textColor="@color/cl_666"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+    <com.gloiot.hygoSupply.widget.RefreshLayout
+        android:id="@+id/wode_fenrun_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_fenrun_02">
+
+        <ListView
+            android:id="@+id/wode_fenrun_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </com.gloiot.hygoSupply.widget.RefreshLayout>
+
+</RelativeLayout>

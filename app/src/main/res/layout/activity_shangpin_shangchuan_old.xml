@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="210px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include3">
+
+
+        <ImageView
+            android:id="@+id/iv_shangpin_shangchuan_add"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:src="@mipmap/ic_shangpin_shangchuan_jia" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout6"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_my_info_touxiang"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/cl_white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="30px">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="fill_vertical"
+                android:text="商品名称"
+                android:textColor="@color/cl_black"
+                android:textSize="32px" />
+
+            <EditText
+                android:id="@+id/et_shangpin_shangchuan_minngcheng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40px"
+                android:layout_toEndOf="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="最多可以输入30字"
+                android:maxLength="30"
+                android:textSize="32px" />
+
+            <include layout="@layout/include_view" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_shangpin_shangchuan_leimu"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/cl_white"
+            android:paddingLeft="30px">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="添加类目"
+                android:textColor="@color/cl_black"
+                android:textSize="32px" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/ic_gengduo" />
+
+            <include layout="@layout/include_view" />
+
+            <TextView
+                android:id="@+id/tv_shangpin_shangchuan_leimu_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:layout_toLeftOf="@+id/imageView6"
+                android:layout_toStartOf="@+id/imageView6"
+                android:text=""
+                android:textColor="#333"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_shangpin_shangchuan_guige"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/cl_white"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="添加商品规格"
+                android:textColor="@color/cl_black"
+                android:textSize="32px" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_gengduo" />
+
+            <TextView
+                android:id="@+id/tv_shangpin_shangchuan_guige_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:layout_toLeftOf="@+id/imageView8"
+                android:layout_toStartOf="@+id/imageView8"
+                android:text=""
+                android:textColor="#333"
+                android:textSize="30px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="20px"
+            android:background="@color/cl_white"
+            android:paddingLeft="30px">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="运费(￥)"
+                android:textColor="@color/cl_black"
+                android:textSize="32px" />
+
+
+            <EditText
+                android:id="@+id/et_shangpin_shangchuan_yunfei"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="53px"
+                android:layout_marginRight="30px"
+                android:layout_toEndOf="@+id/textView8"
+                android:layout_toRightOf="@+id/textView8"
+                android:background="@null"
+                android:gravity="right|center"
+                android:inputType="number"
+                android:textColor="@color/cl_black"
+                android:textSize="32px" />
+
+            <include layout="@layout/include_view" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_shangpin_shangchuan_fahuodi"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/cl_white"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+
+            >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="发货地"
+                android:textColor="@color/cl_black"
+                android:textSize="32px" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_gengduo" />
+
+            <TextView
+                android:id="@+id/tv_shangpin_shangchuan_fahuodi_info"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:layout_toLeftOf="@+id/imageView7"
+                android:layout_toStartOf="@+id/imageView7"
+                android:gravity="center_vertical|right"
+                android:text=""
+                android:textColor="#333"
+                android:textSize="30px" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_shangpin_shangchuan_miaoshu"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="20px"
+            android:background="@color/cl_white"
+            android:paddingLeft="30px">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="商品描述"
+                android:textColor="@color/cl_black"
+                android:textSize="32px" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/ic_gengduo" />
+
+            <TextView
+                android:id="@+id/tv_shangpin_shangchuan_miaoshu_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:layout_toLeftOf="@+id/imageView9"
+                android:layout_toStartOf="@+id/imageView9"
+                android:text=""
+                android:textColor="#333"
+                android:textSize="30px" />
+
+            <include layout="@layout/include_view" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_shangpin_shangchuan_shangchuan"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout9"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/bg_btn_confirm"
+        android:text="商品上传"
+        android:textColor="@color/cl_white"
+        android:textSize="36px" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190px"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_kefu"
+            android:layout_width="65px"
+            android:layout_height="65px"
+            android:layout_centerInParent="true"
+            app:layout_auto_basewidth="height" />
+        <TextView
+            android:id="@+id/tv_kefu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_kefu"
+            android:layout_marginTop="28px"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/cl_333333"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+</RelativeLayout>

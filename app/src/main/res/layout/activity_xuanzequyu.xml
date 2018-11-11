@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background"
+   >
+
+    <include
+        android:id="@+id/include8"
+        layout="@layout/include_head" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:id="@+id/btn_xzqy_baocun"
+        android:text="保存"
+        android:textColor="@color/cl_white"
+        android:textSize="16sp"
+        android:background="@color/cl_ff7f29"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <LinearLayout
+        android:layout_below="@+id/include8"
+        android:layout_above="@+id/btn_xzqy_baocun"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="所有省市"
+            android:textSize="13sp"
+            android:textColor="@color/cl_333333"
+            android:paddingBottom="18px"
+            android:paddingTop="18px"
+            android:paddingLeft="30px"
+            android:background="@color/cl_background"
+            />
+        <ListView
+            android:id="@+id/lv_xzqy_shengshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#e1e2e3"
+            android:dividerHeight="1px"
+            android:background="@color/cl_white"
+            />
+    </LinearLayout>
+</RelativeLayout>

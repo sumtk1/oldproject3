@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zyd.wlwsdk.widge.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical">
+
+    <com.zyd.wlwsdk.widge.swipe.FrontLayout
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/cl_background">
+
+        <RelativeLayout
+            android:id="@+id/rl_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@color/cl_3faaf0"
+            android:paddingLeft="26px"
+            android:paddingRight="26px">
+
+            <ImageView
+                android:id="@+id/img_alipay"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_wode_zhifubao_youxiao" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@+id/img_alipay"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_alipay_zhanghao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text=""
+                    android:textColor="@color/cl_white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_alipay_xingming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_alipay_zhanghao"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/cl_white"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </com.zyd.wlwsdk.widge.swipe.FrontLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_alipay_delete"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#FF6D63"
+            android:gravity="center"
+            android:text="解除关联"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</com.zyd.wlwsdk.widge.swipe.SwipeLayout>

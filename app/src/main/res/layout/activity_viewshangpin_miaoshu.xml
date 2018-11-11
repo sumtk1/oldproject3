@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gloiot.hygoSupply.widget.InterceptRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/interceptRelativeLayout"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_head" />
+
+    <ListView
+        android:id="@+id/lv_shangpin_miaoshu_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_tianjia_shangpin_miaoshu_tianjia"
+        android:layout_below="@+id/toptitle_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:dividerHeight="30px"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_tianjia_shangpin_miaoshu_tianjia"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/cl_activity_newmain"
+        android:text="增加"
+        android:visibility="gone"
+        android:textColor="@color/cl_white"
+        android:textSize="36px" />
+
+    <RelativeLayout
+        android:id="@+id/rl_fg_shangpin_miaosu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toptitle_rl"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="240px"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_hongli_mingxi_no_zhangdan_img"
+            android:layout_width="92px"
+            android:layout_height="106px"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_no_zhangdan"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_hongli_mingxi_no_zhangdan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_hongli_mingxi_no_zhangdan_img"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40px"
+            android:text="请添加图文详情"
+            android:textColor="#666"
+            android:textSize="32px"
+            android:visibility="visible" />
+    </RelativeLayout>
+</com.gloiot.hygoSupply.widget.InterceptRelativeLayout>

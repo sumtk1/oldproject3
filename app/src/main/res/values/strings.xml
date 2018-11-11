@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">环游购商家</string>
+    <string name="to_expand_hint">展开</string>
+    <string name="to_shrink_hint">收起</string>
+    <string name="perm_contacts">请获取通讯录权限</string>
+    <string name="title_activity_add_product_details">AddProductDetailsActivity</string>
+    <string name="title_activity_system_message_detail">SystemMessageDetailActivity</string>
+</resources>

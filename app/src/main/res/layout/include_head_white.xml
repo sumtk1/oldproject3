@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zyd.wlwsdk.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toptitle_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/RelativeLayout2">
+
+        <ImageView
+            android:id="@+id/iv_toptitle_back"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/tv_toptitle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="标题"
+            android:textColor="@color/cl_include_head_title"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_toptitle_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:gravity="center"
+            android:textColor="@color/cl_include_head_right"
+            android:textSize="25px" />
+
+        <ImageView
+            android:id="@+id/tv_toptitle_right_img"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:scaleType="fitCenter"
+            />
+
+        <View
+            style="@style/title_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="96px" />
+
+    </RelativeLayout>
+
+</com.zyd.wlwsdk.autolayout.AutoRelativeLayout>

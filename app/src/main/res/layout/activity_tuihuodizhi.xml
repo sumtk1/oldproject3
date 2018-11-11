@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_addition"
+        android:layout_below="@+id/toptitle_rl"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_shouhuodizhitubiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_no_harvest_address" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30px"
+            android:text="您还没有退货地址"
+            android:textColor="#999999"
+            android:textSize="30px" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_addition"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cl_activity_newmain"
+        android:text="添 加 新 地 址"
+        android:textColor="@color/cl_white"
+        android:textSize="32px" />
+</RelativeLayout>

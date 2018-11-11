@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include8"
+        layout="@layout/include_head" />
+
+    <LinearLayout
+        android:id="@+id/ll_kefu_unavailable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200px"
+            android:src="@mipmap/ic_kefu_smile" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:layout_marginRight="30px"
+            android:text=" 亲，暂时无法要求官方介入，在买家申请售后3天后且售后状态为“等待卖家处理”时您可以申请介入。在此期间建议您与买家积极协商解决。"
+            />
+    </LinearLayout>
+
+    <com.gloiot.hygoSupply.widget.LineGridView
+        android:id="@+id/gv_qingxuanzekefu_kefu_team"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cl_background"
+        android:numColumns="2"></com.gloiot.hygoSupply.widget.LineGridView>
+
+</LinearLayout>

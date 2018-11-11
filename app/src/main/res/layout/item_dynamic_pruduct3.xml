@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:background="@color/cl_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_circular_white">
+
+        <ImageView
+            android:id="@+id/iv_dynamic_product_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/b4b4b4" />
+
+        <TextView
+            android:id="@+id/tv_dynamic_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="42dp"
+            android:layout_toRightOf="@id/iv_dynamic_product_image"
+            android:text=""
+            android:textColor="@color/cl_333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_dynamic_product_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_dynamic_product_image"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textColor="@color/cl_666"
+            android:textSize="12sp"
+
+            />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/divider"
+        layout="@layout/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_circular_white">
+
+        <Button
+            android:id="@+id/btn_item_dynamic_product_edit"
+            android:layout_width="71dp"
+            android:layout_height="29dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_button_14dp_ff7f29"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="#ff7f29"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_item_dynamic_product_delete"
+            android:layout_width="71dp"
+            android:layout_height="29dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_toLeftOf="@id/btn_item_dynamic_product_edit"
+            android:background="@drawable/bg_button_14dp_ff6d63"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#ff6d63"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

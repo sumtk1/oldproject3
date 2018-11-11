@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cl_white">
+
+    <TextView
+        android:id="@+id/tv_jiaonajilu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29px"
+        android:layout_marginTop="35px"
+        android:text=""
+        android:textColor="#333333"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/tv_jiaonajilu_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_jiaonajilu_title"
+        android:layout_marginLeft="29px"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px"
+        android:text=""
+        android:textColor="#999999"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/tv_jiaonajilu_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30px"
+        android:text="+0"
+        android:textColor="#ff6666"
+        android:textSize="48px" />
+
+
+</RelativeLayout>

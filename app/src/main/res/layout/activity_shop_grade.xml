@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head" />
+
+    <com.gloiot.hygoSupply.widget.RefreshLayout
+        android:id="@+id/refreshlayout_shop_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="191dp"
+                android:background="@mipmap/ic_shop_grade_bg">
+
+                <ImageView
+                    android:id="@+id/iv_shop_grade_icon"
+                    android:layout_width="107dp"
+                    android:layout_height="96dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                      />
+
+                <LinearLayout
+                    android:id="@+id/ll_shop_grade_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_shop_grade_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_shop_grade_point_explain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前荣誉分为"
+                        android:textColor="@color/cl_white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_shop_grade_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#ffde00"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shop_grade_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_shop_grade_points"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_shop_grade_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="还差100荣誉分升到"
+                        android:textColor="@color/cl_white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_shop_grade_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#ff2c3f"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/ic_shop_grade_question_mark"
+                        android:layout_marginLeft="4dp" />
+                        <!--android:background="@drawable/bg_oval"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="\?"-->
+                        <!--android:textColor="#ff2c3f"-->
+                        <!--android:textSize="12sp" />-->
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="11dp"
+                android:text="荣誉分记录"
+                android:textColor="@color/cl_333"
+                android:textSize="14sp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_shop_grade_records"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp" />
+        </LinearLayout>
+    </com.gloiot.hygoSupply.widget.RefreshLayout>
+</LinearLayout>

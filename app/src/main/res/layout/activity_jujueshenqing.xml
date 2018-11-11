@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/include_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include3"
+        android:layout_marginTop="24px"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_shangpin_cause"
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_below="@+id/relativeLayout6"
+            android:background="@color/cl_white"
+            android:paddingLeft="30px">
+
+            <TextView
+                android:id="@+id/tv_shangpincause"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="拒绝原因"
+                android:textColor="@color/black"
+                android:textSize="32px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_shangpincause"
+                android:text="*"
+                android:textColor="#E33333" />
+
+            <Spinner
+                android:id="@+id/spinner_jujue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_shangpincause"
+                android:background="@null"
+                android:dropDownVerticalOffset="96px"
+                android:textSize="32px" />
+
+
+            <include layout="@layout/include_view" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_shangpin_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200px"
+            android:layout_below="@+id/relativeLayout6"
+            android:background="@color/cl_white"
+            android:paddingLeft="30px">
+
+            <TextView
+                android:id="@+id/tv_shangpinexplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="32px"
+                android:gravity="center_vertical"
+                android:text="拒绝说明"
+                android:textColor="@color/black"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32px"
+                android:layout_toRightOf="@+id/tv_shangpinexplain"
+                android:text="*"
+                android:textColor="#E33333" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="32px"
+                android:layout_toRightOf="@+id/tv_star"
+                android:hint="(最多200字)" />
+
+            <EditText
+                android:id="@+id/te_shangpin_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_shangpinexplain"
+                android:layout_marginLeft="12px"
+                android:layout_marginRight="12px"
+                android:layout_marginTop="32px"
+                android:background="@null"
+                android:maxLength="200"
+                android:text=""
+                android:drawablePadding="20px"
+                android:gravity="center|left"
+                android:hint="请输入退款说明"
+                android:textColor="#999999"
+                android:textSize="32px" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_shangpin_explain"
+            android:layout_gravity="right"
+            android:layout_marginRight="30px">
+
+            <TextView
+                android:id="@+id/tv_suggestion_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_suggestion_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but_yuanying_tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="提 交"
+        android:textColor="@color/cl_white"
+        android:textSize="32px" />
+</RelativeLayout>

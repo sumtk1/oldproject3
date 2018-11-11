@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_dynamic_product_link"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/include3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_dynamic_product_link"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cl_white"
+            android:gravity="center_vertical"
+            android:hint="选择商品自动生成购买链接"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/cl_999"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ic_dianpu_guanli_go"
+
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/rl_dynamic_product_link"
+        android:background="@drawable/bg_circular_white">
+
+        <EditText
+            android:id="@+id/et_dynamic_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:background="@null"
+            android:gravity="top|left"
+            android:hint="详细的商品介绍更能增加客户的购买欲哟~"
+            android:maxLength="399"
+            android:textColor="#999999"
+            android:textColorHint="@color/cl_999"
+            android:textSize="30px" />
+
+
+        <TextView
+            android:id="@+id/tv_dynamic_product_titlenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30px"
+            android:layout_marginRight="30px"
+            android:text="0/399"
+            android:textColor="#666666"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/but_bianji_baocun"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="保 存"
+        android:textColor="@color/cl_white"
+        android:textSize="32px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

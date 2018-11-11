@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480px"
+        android:padding="30px"
+        android:background="#ffffff">
+        <RelativeLayout
+            android:id="@+id/rl_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="64px"
+                android:layout_height="64px"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:layout_marginLeft="16px"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="30px" />
+            <TextView
+                android:id="@+id/tv_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:layout_marginLeft="16px"
+                android:layout_alignBottom="@+id/iv_icon"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="26px" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_guanggao"
+            android:layout_width="match_parent"
+            android:layout_height="220px"
+            android:layout_below="@+id/rl_type"
+            android:layout_marginTop="16px"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iv_guanggao"
+            android:layout_marginTop="2px"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/iv_second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="2px"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

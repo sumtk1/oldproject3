@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gloiot.hygoSupply.ui.activity.wode.xitongxiaoxi.SystemMessageRecordActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_head" />
+
+    <TextView
+        android:id="@+id/tv_system_message_norecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:drawablePadding="25dp"
+        android:drawableTop="@mipmap/ic_shop_promotion_norecord"
+        android:gravity="center_horizontal"
+        android:text="暂无系统消息"
+        android:textColor="@color/cl_999"
+        android:textSize="15sp" />
+
+    <com.gloiot.hygoSupply.widget.RefreshLayout
+        android:id="@+id/refreshlayout_shop_promotion_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_system_message_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" />
+    </com.gloiot.hygoSupply.widget.RefreshLayout>
+</RelativeLayout>

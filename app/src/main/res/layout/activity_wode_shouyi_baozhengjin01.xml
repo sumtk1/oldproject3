@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="493px"
+                android:background="@mipmap/bg_bzj01">
+
+                <View
+                    android:id="@+id/view_status_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="45px"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_bzj01_back"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_below="@+id/view_status_bar">
+
+                    <ImageView
+                        android:id="@+id/iv_toptitle_back"
+                        android:layout_width="22px"
+                        android:layout_height="40px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="28px"
+                        android:src="@mipmap/ic_titilebar_back" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_status_bar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="26px"
+                    android:text="信誉保证金介绍"
+                    android:textColor="@color/cl_white"
+                    android:textSize="36px" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_bzj_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_bzj01_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="120px"
+                        android:paddingLeft="10px"
+                        android:paddingRight="10px"
+                        android:shadowColor="#FF664E"
+                        android:shadowDx="0"
+                        android:shadowDy="16"
+                        android:shadowRadius="30"
+                        android:text="0"
+                        android:textColor="@color/cl_white"
+                        android:textSize="72px" />
+
+                    <ImageView
+                        android:layout_width="124px"
+                        android:layout_height="2px"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="220px"
+                        android:background="@mipmap/ic_bzj01_xian" />
+
+                    <TextView
+                        android:id="@+id/tv_bzj01_djn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="240px"
+                        android:text="需缴纳(元)"
+                        android:textColor="#90ffffff"
+                        android:textSize="24px" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_bzj_gxn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="150px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:shadowColor="#FF664E"
+                    android:shadowDx="0"
+                    android:shadowDy="16"
+                    android:shadowRadius="30"
+                    android:text="恭喜您"
+                    android:textColor="@color/cl_white"
+                    android:textSize="72px"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_bzj01_tsy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="300px"
+                android:text=""
+                android:textColor="@color/cl_white"
+                android:textSize="24px" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_01"
+                android:layout_width="660px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_bzj01_tsy"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                app:cardBackgroundColor="@color/cl_white"
+                app:cardCornerRadius="20px"
+                app:cardElevation="18px">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="49px"
+                        android:text="缴纳完信誉保证金将会享受"
+                        android:textColor="#333333"
+                        android:textSize="40px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_01"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50px">
+
+                            <ImageView
+                                android:layout_width="176px"
+                                android:layout_height="130px"
+                                android:layout_marginLeft="40px"
+                                android:background="@mipmap/ic_bzj_p1" />
+
+                            <TextView
+                                android:id="@+id/tv_bzj01_title1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="250px"
+                                android:text=""
+                                android:textColor="#FF7F29"
+                                android:textSize="32px" />
+
+                            <TextView
+                                android:id="@+id/tv_bzj01_content1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="250px"
+                                android:layout_marginRight="50px"
+                                android:layout_marginTop="64px"
+                                android:text=""
+                                android:textColor="#999999"
+                                android:textSize="24px" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50px">
+
+                            <ImageView
+                                android:layout_width="176px"
+                                android:layout_height="130px"
+                                android:layout_marginLeft="40px"
+                                android:background="@mipmap/ic_bzj_p2" />
+
+                            <TextView
+                                android:id="@+id/tv_bzj01_title2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="250px"
+                                android:text=""
+                                android:textColor="#FF7F29"
+                                android:textSize="32px" />
+
+                            <TextView
+                                android:id="@+id/tv_bzj01_content2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="250px"
+                                android:layout_marginRight="50px"
+                                android:layout_marginTop="64px"
+                                android:text=""
+                                android:textColor="#999999"
+                                android:textSize="24px" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="50px"
+                            android:layout_marginTop="50px">
+
+                            <ImageView
+                                android:layout_width="176px"
+                                android:layout_height="130px"
+                                android:layout_marginLeft="40px"
+                                android:background="@mipmap/ic_bzj_p3" />
+
+                            <TextView
+                                android:id="@+id/tv_bzj01_title3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="250px"
+                                android:text=""
+                                android:textColor="#FF7F29"
+                                android:textSize="32px" />
+
+                            <TextView
+                                android:id="@+id/tv_bzj01_content3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="250px"
+                                android:layout_marginRight="50px"
+                                android:layout_marginTop="64px"
+                                android:text=""
+                                android:textColor="#999999"
+                                android:textSize="24px" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_bzj01_jilu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_01"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                android:text="缴纳记录"
+                android:textColor="#666666"
+                android:textSize="26px"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_bzj01"
+                android:layout_width="660px"
+                android:layout_height="96px"
+                android:layout_below="@+id/cv_01"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40px"
+                android:layout_marginTop="30px"
+                android:background="@drawable/bg_btn_confirm_radius"
+                android:text="一键缴纳信誉保证金"
+                android:textColor="@color/cl_white" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include5"
+        layout="@layout/include_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_vip" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginTop="10px"
+                android:background="@color/cl_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="功能特权"
+                    android:textColor="@color/cl_black"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d7d7d7" />
+
+            <TextView
+                android:id="@+id/tv_shangjiafuwu_shuoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:lineSpacingExtra="30px"
+                android:textColor="@color/cl_black"
+                android:textSize="30px" />
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="110px"-->
+            <!--android:background="@color/cl_white"-->
+            <!--android:paddingLeft="30px"-->
+            <!--android:paddingRight="30px">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginLeft="18px"-->
+            <!--android:layout_toEndOf="@+id/imageView1"-->
+            <!--android:layout_toRightOf="@+id/imageView1"-->
+            <!--android:gravity="fill_vertical"-->
+            <!--android:text="1.最大上传1000款产品"-->
+            <!--android:textColor="@color/cl_black"-->
+            <!--android:textSize="30px" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@mipmap/ic_vip_shangchuan" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#d7d7d7" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="110px"-->
+            <!--android:background="@color/cl_white"-->
+            <!--android:paddingLeft="30px"-->
+            <!--android:paddingRight="30px">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginLeft="18px"-->
+            <!--android:layout_toEndOf="@+id/imageView2"-->
+            <!--android:layout_toRightOf="@+id/imageView2"-->
+            <!--android:gravity="fill_vertical"-->
+            <!--android:text="2.可跨中油卡平台享受收益"-->
+            <!--android:textColor="@color/cl_black"-->
+            <!--android:textSize="30px" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@mipmap/ic_vip_shouyi" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#d7d7d7" />-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="110px"-->
+            <!--android:background="@color/cl_white"-->
+            <!--android:paddingLeft="30px"-->
+            <!--android:paddingRight="30px">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginLeft="18px"-->
+            <!--android:layout_toEndOf="@+id/imageView3"-->
+            <!--android:layout_toRightOf="@+id/imageView3"-->
+            <!--android:gravity="fill_vertical"-->
+            <!--android:text="3.获得中油卡、商城、异业各种活动优惠"-->
+            <!--android:textColor="@color/cl_black"-->
+            <!--android:textSize="30px" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@mipmap/ic_vip_youhui" />-->
+            <!--</RelativeLayout>-->
+
+            <Button
+                android:id="@+id/btn_shangjiafuwu_lijixiangyong"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="296px"
+                android:background="@drawable/bg_wode_vip_btn"
+                android:text="立即享有"
+                android:textColor="@color/cl_red"
+                android:textSize="36px" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

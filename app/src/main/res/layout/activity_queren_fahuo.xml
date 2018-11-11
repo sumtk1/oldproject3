@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="fahuobean"
+            type="com.gloiot.hygoSupply.bean.FaHuoBean" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/ll_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F9F9F9">
+
+        <include
+            android:id="@+id/include8"
+            layout="@layout/include_head">
+
+        </include>
+
+        <RadioGroup
+            android:id="@+id/rg_queren_fdahuo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/include8"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/gr_wuliu_leixing"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_wuliu_type_xuyao"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_wuliu_background_left"
+                android:button="@null"
+                android:checked="@={fahuobean.isWuliu}"
+                android:gravity="center"
+                android:text="物流发货"
+                android:textColor="@drawable/bg_btn_wuliu_textcolor"
+                android:textSize="30px" />
+
+            <RadioButton
+                android:id="@+id/rb_wuliu_type_buxuyao"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_wuliu_background_right"
+                android:button="@null"
+                android:checked="@{!fahuobean.isWuliu}"
+                android:gravity="center"
+                android:text="无需物流"
+                android:textColor="@drawable/bg_btn_wuliu_textcolor"
+                android:textSize="30px" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/rg_queren_fdahuo"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@color/cl_activity_newmain" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rg_queren_fdahuo"
+            android:layout_marginTop="20px"
+            android:background="#F9F9F9"
+            android:orientation="vertical"
+            android:visibility="@{fahuobean.isWuliu &amp;&amp; !fahuobean.isOffline ? View.VISIBLE : View.GONE}">
+            <!--android:visibility="visible">-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:background="@drawable/bg_rl_queren_fashuo">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/style_all_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="快递公司:"
+                    android:textColor="#333"
+                    android:textSize="30px"
+
+                    />
+
+                <TextView
+                    android:id="@+id/et_queren_fahuo_xuanzegongsi"
+                    style="@style/style_all_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27px"
+                    android:layout_marginTop="45px"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请选择快递公司"
+                    android:maxLength="11"
+                    android:text="@={fahuobean.kuaidigongsi}"
+                    android:textColorHint="#999999"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:id="@+id/img_queren_fahuo_xuanze"
+                    android:layout_width="40px"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20px"
+                    android:src="@mipmap/ic_wode_zd_xx" />
+
+                <View
+                    android:layout_width="410px"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/et_queren_fahuo_xuanzegongsi"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="@mipmap/xuxian" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11px"></RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/bg_rl_queren_fashuo">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/style_all_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="快递单号:"
+                    android:textColor="#333"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/et_queren_fahuo_kuaididanhao"
+                    style="@style/style_all_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27px"
+                    android:layout_marginTop="45px"
+                    android:layout_toEndOf="@+id/textView3"
+                    android:layout_toRightOf="@+id/textView3"
+                    android:background="@null"
+                    android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:hint="请填写快递单号"
+                    android:text="@={fahuobean.kuaidibianhao}"
+                    android:textSize="30px" />
+
+                <View
+                    android:layout_width="410px"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/et_queren_fahuo_kuaididanhao"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="10px"
+                    android:layout_toRightOf="@+id/textView3"
+                    android:background="@mipmap/xuxian" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_queren_fahuo_queding"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="84px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@color/cl_activity_newmain"
+            android:text="确认发货"
+            android:textColor="@color/cl_white"
+            android:textSize="34px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rg_queren_fdahuo"
+            android:layout_marginTop="20px"
+            android:visibility="@{fahuobean.isOffline ? View.VISIBLE: View.GONE}">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_queren_fahuo_yanzhengma"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/bg_rl_queren_fashuo">
+
+                <EditText
+                    android:id="@+id/et_queren_fahuo_yanzhengma"
+                    style="@style/style_all_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="27px"
+                    android:layout_marginTop="45px"
+                    android:background="@null"
+                    android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:hint="请输入线下交易收货验证码"
+                    android:text="@={fahuobean.offlineCode}"
+                    android:textColorHint="@color/cl_666"
+                    android:textSize="30px" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_queren_fahuo_yanzhengma"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="26px"
+                android:text="@{fahuobean.offlineExplain}"
+                android:textColor="@color/cl_999"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rg_queren_fdahuo"
+            android:layout_marginTop="274px"
+            android:visibility="@{!fahuobean.isWuliu &amp;&amp; !fahuobean.isOffline ? View.VISIBLE: View.GONE}">
+
+
+            <ImageView
+                android:id="@+id/box"
+                android:layout_width="133px"
+                android:layout_height="158px"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/box" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/box"
+                android:layout_marginTop="80px"
+                android:gravity="center"
+                android:text="无需发货则不用填写物流相关信息"
+                android:textColor="#777777"
+                android:textSize="30px" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_grade_recored_detail"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/include"
+        android:background="@mipmap/ic_grade_recored_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_shop_grade_star" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:text="荣誉分"
+            android:textColor="@color/cl_white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_grade_record_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73dp"
+            android:text=""
+            android:textColor="@color/cl_white"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_grade_record_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_grade_recored_detail"
+        android:layout_marginTop="11dp" />
+
+
+    <TextView
+        android:id="@+id/tv_grade_record_detail_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="订单详情"
+
+        android:textColor="#fffea748"
+        android:textSize="13dp"
+
+        />
+
+</RelativeLayout>

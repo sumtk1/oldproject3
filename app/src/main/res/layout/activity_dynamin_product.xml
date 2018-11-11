@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_head" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_dynamic_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_dynamic_product_publish"
+        android:layout_below="@+id/include"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="26px"
+        android:background="@color/cl_background"
+        android:descendantFocusability="beforeDescendants" />
+
+
+    <Button
+        android:id="@+id/btn_dynamic_product_publish"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="发 布"
+        android:textColor="@color/cl_white"
+        android:textSize="32px" />
+
+</RelativeLayout>

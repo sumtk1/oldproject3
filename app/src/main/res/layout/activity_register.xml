@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9">
+
+    <include layout="@layout/include_head" />
+
+    <ImageView
+        android:id="@+id/iv_register_touxiang"
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:layout_below="@+id/toptitle_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28px"
+        android:src="@mipmap/ic_camera" />
+
+    <LinearLayout
+        android:id="@+id/ll_trhidyrt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_register_touxiang"
+        android:layout_marginTop="40px"
+        android:background="@color/cl_white"
+        android:orientation="vertical"
+        android:paddingLeft="30px">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/style_all_tv"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="手机号" />
+
+            <EditText
+                android:id="@+id/et_register_phone"
+                style="@style/style_all_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:layout_toRightOf="@id/textView"
+                android:background="@null"
+                android:gravity="left|center"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                android:maxLength="11" />
+
+            <include layout="@layout/include_view" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+
+            <EditText
+                android:id="@+id/et_register_yanzhengma"
+                style="@style/style_all_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/tv_register_getyanzhengma"
+                android:layout_toStartOf="@+id/tv_register_getyanzhengma"
+                android:background="@null"
+                android:hint="请输入验证码" />
+
+
+            <com.gloiot.hygoSupply.ui.widget.TimeButton
+                android:id="@+id/tv_register_getyanzhengma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:paddingRight="30px"
+                android:text="获取验证码"
+                android:textColor="@color/cl_activity_main"
+                android:textSize="34px" />
+
+            <include layout="@layout/include_view" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/style_all_tv"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="设置密码" />
+
+            <EditText
+                android:id="@+id/et_register_password"
+                style="@style/style_all_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:layout_toRightOf="@id/textView3"
+                android:background="@null"
+                android:gravity="left|center"
+                android:hint="请输入不少于6位数的密码"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <include layout="@layout/include_view" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/style_all_tv"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="确定密码" />
+
+            <EditText
+                android:id="@+id/et_register_repassword"
+                style="@style/style_all_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:layout_toRightOf="@id/textView4"
+                android:background="@null"
+                android:gravity="left|center"
+                android:hint="请再次输入密码"
+                android:inputType="textPassword" />
+
+            <include layout="@layout/include_view" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/style_all_tv"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="姓名" />
+
+            <EditText
+                android:id="@+id/et_register_name"
+                style="@style/style_all_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:layout_toRightOf="@id/textView5"
+                android:background="@null"
+                android:gravity="left|center"
+                android:hint="请输入姓名" />
+
+            <include layout="@layout/include_view" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_gonghuo_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_trhidyrt"
+        android:layout_marginTop="20px"
+        android:background="@color/cl_white"
+        android:orientation="vertical"
+        android:paddingLeft="30px"></LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register_next"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ll_select_gonghuo_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="90px"
+        android:background="@drawable/bg_btn_confirm"
+        android:text="下一步"
+        android:textColor="@color/cl_white"
+        android:textSize="36px" />
+
+
+</RelativeLayout>

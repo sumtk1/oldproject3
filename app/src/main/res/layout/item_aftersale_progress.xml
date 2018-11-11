@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cl_background"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+
+    <com.gloiot.hygoSupply.widget.AfterSaleProgressView
+        android:id="@+id/after_sale_progress1"
+        android:layout_width="90dp"
+
+        android:layout_height="90dp" />
+
+    <com.gloiot.hygoSupply.widget.AfterSaleProgressView
+        android:id="@+id/after_sale_progress2"
+        android:layout_width="90dp"
+
+        android:layout_height="90dp" />
+
+    <com.gloiot.hygoSupply.widget.AfterSaleProgressView
+        android:id="@+id/after_sale_progress3"
+        android:layout_width="90dp"
+
+        android:layout_height="90dp" />
+
+    <com.gloiot.hygoSupply.widget.AfterSaleProgressView
+        android:id="@+id/after_sale_progress4"
+        android:layout_width="90dp"
+
+        android:layout_height="90dp" />
+
+</LinearLayout>

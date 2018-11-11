@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_item_participate_activitys_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/iv_item_participate_activitys_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_item_participate_activitys_type"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_item_participate_activitys_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/fl_item_participate_activitys_image"
+        android:text="迪赛尼斯2017冬装新款羊外套"
+        android:textColor="#ff333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_item_participate_activitys_pricetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_participate_activitys_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/fl_item_participate_activitys_image"
+        android:text="原价:"
+        android:textColor="#ff999999"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_item_participate_activitys_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_participate_activitys_name"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/tv_item_participate_activitys_pricetxt"
+        android:text="￥100"
+        android:textColor="#ff333333"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_item_participate_activitys_pointtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_participate_activitys_pricetxt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/fl_item_participate_activitys_image"
+        android:text="积分抵扣比例:"
+        android:textColor="#ff999999"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_item_participate_activitys_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_participate_activitys_pricetxt"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/tv_item_participate_activitys_pointtxt"
+        android:text="￥100"
+        android:textColor="#FF436F"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/parting_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/fl_item_participate_activitys_image"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffe1e2e3" />
+
+    <TextView
+        android:id="@+id/tv_item_participate_activitys_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/parting_line"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@mipmap/ic_activitys_delete"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:text="删除"
+        android:textColor="#ff666666"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_item_participate_activitys_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parting_line"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/tv_item_participate_activitys_delete"
+        android:drawableLeft="@mipmap/ic_activitys_edit"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:text="编辑"
+        android:textColor="#ff666666"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/parting_line1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/tv_item_participate_activitys_delete"
+        android:layout_marginTop="14dp"
+        android:background="#ffe1e2e3" />
+</RelativeLayout>

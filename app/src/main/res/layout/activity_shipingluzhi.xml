@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/rl_fazhuangtai_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28px">
+
+        <ImageView
+            android:id="@+id/im_fazhuangtai_guanbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28px"
+            android:src="@mipmap/ic_fazhuangtai_chuxiao" />
+
+        <ImageView
+            android:id="@+id/im_fazhuangtai_qiehuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28px"
+            android:src="@mipmap/ic_fazhuangtai_fnazhuang" />
+    </RelativeLayout>
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_fazhuangtai_01"
+        android:layout_marginTop="100px"
+       />
+
+    <RelativeLayout
+        android:id="@+id/rl_fazhuangtai_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:paddingTop="64px"
+        android:background="@color/cl_black"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/im_fazhuangtai_kaishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="148px"
+            android:src="@mipmap/ic_fazhuangtai_kaishi" />
+
+        <ImageView
+            android:id="@+id/im_fazhuangtai_queding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="148px"
+            android:src="@mipmap/ic_fazhuangtai_queding" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/cl_black"
+        android:layout_above="@+id/rl_fazhuangtai_bottom"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        >
+
+        <TextView
+            android:id="@+id/tv_fazhuangtai_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:padding="20px"
+            android:text="00:00:00"
+            android:background="@drawable/bg_huise"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

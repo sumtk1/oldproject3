@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_post_fabu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="25px"
+        android:text="请选择发布商品数量"
+        android:textColor="#999999"
+        android:textSize="26px" />
+
+    <LinearLayout
+        android:id="@+id/ll_post_xuanxiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_post_fabu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="22px"
+        android:layout_marginRight="22px"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_post_dankuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_circular_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="34px"
+                android:text="单款商品"
+                android:textColor="#999999"
+                android:textSize="30px" />
+
+            <ImageView
+                android:id="@+id/im_post_xuezei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="79px"
+                android:src="@mipmap/ic_post_dianji" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_post_duokuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/bg_circular_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="34px"
+                android:text="多款商品"
+                android:textColor="#999999"
+                android:textSize="30px" />
+
+            <ImageView
+                android:id="@+id/im_post_dianji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="79px"
+                android:src="@mipmap/ic_post_dianji" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_post_connect"
+        android:layout_width="match_parent"
+        android:layout_height="91px"
+        android:layout_below="@+id/ll_post_xuanxiang"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:layout_marginTop="23px"
+        android:background="@drawable/bg_circular_white"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="27px"
+            android:text="选择商品自动生成购买链接" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24px"
+            android:src="@mipmap/ic_arrow_right" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tianjianeorong_bianji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_post_connect"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:layout_marginTop="23px"
+        android:background="@drawable/bg_circular_white">
+
+        <EditText
+            android:id="@+id/et_bianji_biaoti"
+            android:layout_width="match_parent"
+            android:layout_height="201px"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="好的标题能带来更高的关注度哟~"
+            android:padding="30px"
+            android:textSize="30px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/et_bianji_biaoti"
+            android:layout_marginRight="30px">
+
+            <TextView
+                android:id="@+id/tv_suggestion_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_suggestion_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bianji_zhanshitupian"
+        android:layout_width="match_parent"
+        android:layout_height="301px"
+        android:layout_below="@+id/rl_tianjianeorong_bianji"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:layout_marginTop="23px"
+        android:background="@drawable/bg_circular_white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/im_bianji_zhanshitupian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/im_bianji_zhanshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68px"
+            android:src="@mipmap/ic_bianji_tianjia" />
+
+        <TextView
+            android:id="@+id/tv_tianjiazhanshitupian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_bianji_zhanshi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29px"
+            android:text="添加展示图片"
+            android:textColor="#666666"
+            android:textSize="26px" />
+    </RelativeLayout>
+</RelativeLayout>

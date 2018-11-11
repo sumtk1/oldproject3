@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="165px"
+        android:layout_height="165px"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/id_item_image"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:horizontalSpacing="3px"
+            android:verticalSpacing="3px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true" />
+
+        <ImageButton
+            android:id="@+id/id_item_select"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:paddingRight="-30px"
+            android:paddingTop="-30px"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/ic_renzhengtu_shanchu"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

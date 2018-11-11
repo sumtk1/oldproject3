@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_head" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toptitle_rl"
+        android:orientation="vertical">
+
+        <com.gloiot.hygoSupply.widget.RefreshLayout
+            android:id="@+id/refreshlayout_shoukuan_jilu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5f6f7">
+
+            <ListView
+                android:id="@+id/lv_shoukuan_jilu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:divider="#f5f6f7"
+                android:dividerHeight="20px" />
+        </com.gloiot.hygoSupply.widget.RefreshLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_shoukuan_jilu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无收款记录"
+        android:visibility="gone" />
+
+</RelativeLayout>

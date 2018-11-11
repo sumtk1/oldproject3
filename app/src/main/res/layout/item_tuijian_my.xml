@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/cl_white"
+    android:orientation="vertical"
+    android:paddingLeft="30px">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="81px"
+        android:background="@color/cl_white">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="fill_vertical"
+            android:text="姓名:"
+            android:textColor="@color/cl_text"
+            android:textSize="32px" />
+
+        <include layout="@layout/include_view" />
+
+        <TextView
+            android:id="@+id/tv_item_tuijian_my_xingming"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView12"
+            android:layout_toRightOf="@+id/textView12"
+            android:gravity="fill_vertical"
+            android:text=""
+            android:textColor="@color/cl_text"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="81px"
+        android:background="@color/cl_white">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="fill_vertical"
+            android:text="手机号:"
+            android:textColor="@color/cl_text"
+            android:textSize="32px" />
+
+        <include layout="@layout/include_view" />
+
+        <TextView
+            android:id="@+id/tv_item_tuijian_my_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_toRightOf="@+id/textView13"
+            android:gravity="fill_vertical"
+            android:text=""
+            android:textColor="@color/cl_text"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="81px"
+        android:background="@color/cl_white">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="fill_vertical"
+            android:text="类别:"
+            android:textColor="@color/cl_text"
+            android:textSize="32px" />
+
+        <include layout="@layout/include_view" />
+
+        <TextView
+            android:id="@+id/tv_item_tuijian_my_sctype"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView14"
+            android:layout_toRightOf="@+id/textView14"
+            android:gravity="fill_vertical"
+            android:text=""
+            android:textColor="@color/cl_text"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="81px"
+        android:background="@color/cl_white">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="fill_vertical"
+            android:text="关注时间:"
+            android:textColor="@color/cl_text"
+            android:textSize="32px" />
+
+        <include layout="@layout/include_view" />
+
+        <TextView
+            android:id="@+id/tv_item_tuijian_my_guanzhutime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView15"
+            android:layout_toRightOf="@+id/textView15"
+            android:gravity="fill_vertical"
+            android:text=""
+            android:textColor="@color/cl_text"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+
+</LinearLayout>

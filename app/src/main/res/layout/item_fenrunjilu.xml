@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vw_xian"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_fenrun_zhanghu"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/cl_bg_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+     >
+
+        <TextView
+            android:id="@+id/tv_fenren_mingcheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxxxxx"
+            android:textColor="#333333"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_fenrun_lurushijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fenren_mingcheng"
+            android:layout_marginTop="10px"
+            android:text="2017/05/22"
+            android:textColor="#999999"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/tv_fenrun_jinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="10000"
+            android:textColor="#FF7F29"
+            android:textSize="40px" />
+
+    </RelativeLayout>
+
+</LinearLayout>

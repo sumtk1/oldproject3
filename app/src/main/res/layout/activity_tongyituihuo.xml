@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/include_head" />
+
+    <LinearLayout
+        android:id="@+id/ll_dibulan"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cl_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_shangjia_guanfang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="官方介入"
+            android:textColor="#333333"
+            android:textSize="30px" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16px"
+            android:layout_marginTop="16px"
+            android:background="@color/cl_bg_view" />
+
+        <TextView
+            android:id="@+id/tv_shangjia_tongyi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确认退货"
+            android:textColor="#333333"
+            android:textSize="30px" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_dibulan"
+        android:layout_below="@+id/include3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_tiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35px"
+                android:background="@drawable/bg_background_gray"
+                android:padding="10px"
+                android:text=""
+                android:textColor="#FEFEFE" />
+
+            <TextView
+                android:id="@+id/tv_sales_tiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35px"
+                android:background="@drawable/bg_background_gray"
+                android:padding="10px"
+                android:text=""
+                android:textColor="#FEFEFE" />
+
+            <TextView
+                android:id="@+id/tv_sales_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="22px"
+                android:layout_marginTop="48px"
+                android:text="系统消息"
+                android:textColor="#666666"
+                android:textSize="22px" />
+
+            <RelativeLayout
+                android:id="@+id/rl_xitong_tankuang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sales_tiem"
+                android:layout_marginLeft="22px"
+                android:layout_marginRight="27px"
+                android:layout_marginTop="24px"
+                android:background="@drawable/ic_chengse"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_tiem_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_xitong_tankuang"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35px"
+                android:background="@drawable/bg_background_gray"
+                android:padding="10px"
+                android:text=""
+                android:textColor="#FEFEFE" />
+
+            <RelativeLayout
+                android:id="@+id/rl_xitong_tankuang_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_tiem_1"
+                android:layout_marginLeft="34px"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="32px"
+                android:background="@drawable/hui">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="29px"
+                    android:layout_marginTop="25px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="卖家已确认退货地址"
+                        android:textColor="#333333"
+                        android:textSize="30px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="26px"
+                        android:background="@color/cl_bg_view" />
+
+                    <TextView
+                        android:id="@+id/tv_tuihuodizhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25px"
+                        android:layout_marginTop="30px"
+                        android:text=""
+                        android:textColor="#666666"
+                        android:textSize="24px" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_tongyi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_xitong_tankuang_1">
+
+                <TextView
+                    android:id="@+id/tv_tiem_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35px"
+                    android:background="@drawable/bg_background_gray"
+                    android:padding="10px"
+                    android:text=""
+                    android:textColor="#FEFEFE" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_xitong_tankuang_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_tiem_2"
+                    android:layout_marginLeft="34px"
+                    android:layout_marginRight="15px"
+                    android:layout_marginTop="32px"
+                    android:background="@drawable/hui">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginRight="29px"
+                        android:layout_marginTop="25px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="卖家已同意申请"
+                            android:textColor="#333333"
+                            android:textSize="30px" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3px"
+                            android:layout_marginTop="26px"
+                            android:background="@color/cl_bg_view" />
+
+                        <TextView
+                            android:id="@+id/tv_tuihuodizhi_shuoming"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30px"
+                            android:text="卖家同意了本次售后服务申请"
+                            android:textColor="#666666"
+                            android:textSize="24px" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_maijiaqueren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_tongyi"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl_tongyi_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_tiem_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35px"
+                        android:background="@drawable/bg_background_gray"
+                        android:padding="10px"
+                        android:text=""
+                        android:textColor="#FEFEFE" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_xitong_tankuang_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_tiem_3"
+                        android:layout_marginLeft="34px"
+                        android:layout_marginRight="15px"
+                        android:layout_marginTop="32px"
+                        android:background="@drawable/hui">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginRight="29px"
+                            android:layout_marginTop="25px"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="卖家确认收货"
+                                android:textColor="#333333"
+                                android:textSize="30px" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="3px"
+                                android:layout_marginTop="26px"
+                                android:background="@color/cl_bg_view" />
+
+                            <TextView
+                                android:id="@+id/tv_tuihuodizhi_shuoming_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30px"
+                                android:text="买家退货阶段，卖家确认收货"
+                                android:textColor="#666666"
+                                android:textSize="24px" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_tuihuo_tiem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_tongyi_1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="35px"
+                    android:background="@drawable/bg_background_gray"
+                    android:padding="10px"
+                    android:text=""
+                    android:textColor="#FEFEFE" />
+
+                <TextView
+                    android:id="@+id/tv_tuihuo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_tongyi_1"
+                    android:layout_marginLeft="22px"
+                    android:layout_marginTop="48px"
+                    android:text="环游购系统"
+                    android:textColor="#666666" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_tongyi_tuikuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_tuihuo_tiem"
+                    android:layout_marginLeft="22px"
+                    android:layout_marginRight="27px"
+                    android:layout_marginTop="24px"
+                    android:background="@drawable/ic_lanse">
+
+                    <TextView
+                        android:id="@+id/tv_tuongyituihuo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="25px"
+                        android:text="退款成功"
+                        android:textColor="#333333"
+                        android:textSize="30px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_below="@+id/tv_tuongyituihuo"
+                        android:layout_marginTop="26px"
+                        android:background="@color/cl_bg_view" />
+
+                    <TextView
+                        android:id="@+id/tv_tongyituihuo_jinge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_tuongyituihuo"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="51px"
+                        android:textSize="24px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_below="@+id/tv_tongyituihuo_jinge"
+                        android:layout_marginTop="26px"
+                        android:background="@color/cl_bg_view" />
+
+                    <TextView
+                        android:id="@+id/tv_tuikuanbianhao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_tongyituihuo_jinge"
+                        android:layout_marginBottom="25px"
+                        android:layout_marginTop="51px"
+                        android:text="" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

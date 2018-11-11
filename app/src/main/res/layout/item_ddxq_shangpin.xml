@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_tkxq_top"
+        android:background="@color/cl_white"
+        android:paddingBottom="20px"
+        android:paddingLeft="30px"
+        android:paddingTop="20px">
+
+        <ImageView
+            android:id="@+id/iv_item_sp_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="20px"
+            android:paddingRight="16px"
+            android:paddingTop="20px"
+            android:src="@mipmap/icon_not_to_choose"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/fl_item_dingdan_xiqngqing_suolvetu"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_toRightOf="@+id/iv_item_sp_selected">
+
+            <ImageView
+                android:id="@+id/iv_item_sp_pic"
+                android:layout_width="140px"
+                android:layout_height="140px" />
+
+            <ImageView
+                android:id="@+id/iv_item_dingdan_xiangqing_fahuo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_item_dingdan_xiangqing_shangpin_quanqiugou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10px"
+            android:src="@mipmap/ic_quanqiugou"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_item_ddxq_shangpinming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:layout_marginRight="44px"
+            android:layout_toRightOf="@+id/fl_item_dingdan_xiqngqing_suolvetu"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:textColor="@color/cl_black"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_item_ddxq_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_ddxq_shangpinming"
+            android:layout_below="@+id/tv_item_ddxq_shangpinming"
+            android:layout_marginTop="22px"
+            android:textColor="@color/cl_999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_item_ddxq_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_item_ddxq_color"
+            android:layout_below="@+id/tv_item_ddxq_shangpinming"
+            android:layout_marginRight="34px"
+            android:textColor="@color/cl_666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_item_ddxq_wuliu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_item_ddxq_num"
+            android:layout_marginRight="34px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/bg_btn_shangpin_guanli_zhuangtai2"
+            android:paddingBottom="5px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:paddingTop="5px"
+            android:text="查看物流"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_item_ddxq_feilv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_item_ddxq_num"
+            android:layout_marginRight="34px"
+            android:layout_marginTop="30px"
+            android:textColor="@color/cl_activity_newmain"
+            android:visibility="gone"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_item_ddxq_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_ddxq_shangpinming"
+            android:layout_below="@+id/tv_item_ddxq_color"
+            android:layout_marginTop="26px"
+            android:textColor="@color/cl_333333"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_item_ddxq_chuli"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="24px"
+            android:layout_marginRight="24px"
+            android:background="@drawable/bg_button_26_shape"
+            android:textColor="@color/cl_ff7f29"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_item_ddxq_chuli"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="24px"
+            android:layout_marginRight="24px"
+            android:textColor="@color/cl_333"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/include_webtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="100px" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_below="@+id/rl_title"
+        android:gravity="center"
+        android:text="剩余支付时间："
+        android:textColor="#fc605f"
+        android:textSize="26px"
+        android:visibility="gone" />
+
+    <com.zyd.wlwsdk.webview.InnerWebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

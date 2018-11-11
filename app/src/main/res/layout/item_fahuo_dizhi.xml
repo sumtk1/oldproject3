@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cl_white"
+        android:orientation="vertical"
+        android:paddingLeft="30px">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_fahuo_dizhi_info"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:id="@+id/tv_item_fahuo_dizhi_name"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28px"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="#2a2929"
+                android:textSize="34px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_fahuo_dizhi_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_item_fahuo_dizhi_name"
+                android:layout_marginLeft="20px"
+                android:layout_toEndOf="@+id/tv_item_fahuo_dizhi_name"
+                android:layout_toRightOf="@+id/tv_item_fahuo_dizhi_name"
+                android:text=""
+                android:textColor="#2a2929"
+                android:textSize="34px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_fahuo_dizhi_dizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_item_fahuo_dizhi_name"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="15px"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="#2a2929" />
+
+            <ImageView
+                android:id="@+id/iv_item_fahuo_dizhi_xuanze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="32px"
+                android:src="@mipmap/ic_benci_fahuodi_dagou" />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/ic_item_fahuodi"
+            layout="@layout/include_view"></include>
+
+        <RelativeLayout
+            android:id="@+id/rl_item_fahuo_dizhi_none"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingRight="30px"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="200px"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true">
+
+                <RadioButton
+                    android:id="@+id/iv_item_fahuo_dizhi_weixuan_moren"
+                    android:layout_width="200px"
+                    android:layout_height="60px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/bg_rb_confirm"
+                    android:text=" 设置默认" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_item_fahuo_dizhi_shanchu"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/iv_item_fahuo_dizhi_xiugai"
+                android:scaleType="center"
+                android:src="@mipmap/shanchu" />
+
+            <ImageView
+                android:id="@+id/iv_item_fahuo_dizhi_xiugai"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="33px"
+                android:layout_toLeftOf="@+id/iv_item_fahuo_dizhi_shanchu"
+                android:layout_toStartOf="@+id/iv_item_fahuo_dizhi_shanchu"
+                android:scaleType="center"
+                android:src="@mipmap/xiugai" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

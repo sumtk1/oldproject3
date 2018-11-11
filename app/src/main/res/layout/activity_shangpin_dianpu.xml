@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include12"
+        layout="@layout/include_head" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include12"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/scrollView"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_shangpin_dianpyu_tupian"
+                android:layout_width="match_parent"
+                android:layout_height="650px"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_shangpin_dianpyu_quanqiugou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="30px"
+                    android:src="@mipmap/ic_quanqiugou"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_shangpin_dianpyu_mingcheng"
+                    android:layout_width="450px"
+                    android:layout_height="40px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/iv_shangpin_dianpyu_tupian"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="30px"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="36px" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_shangpin_dianpyu_jiage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_shangpin_dianpyu_mingcheng"
+                    android:layout_alignStart="@+id/tv_shangpin_dianpyu_mingcheng"
+                    android:layout_below="@+id/tv_shangpin_dianpyu_mingcheng"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="30px"
+                    android:text=""
+                    android:textColor="@color/cl_activity_main"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/tv_shangpin_dianpyu_jianyijia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_shangpin_dianpyu_mingcheng"
+                    android:layout_alignStart="@+id/tv_shangpin_dianpyu_mingcheng"
+                    android:layout_below="@+id/tv_shangpin_dianpyu_mingcheng"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="30px"
+                    android:text=""
+                    android:textColor="@color/cl_999"
+                    android:textSize="32px" />
+
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_shangpin_dianpyu_jiage"
+                android:layout_marginTop="30px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px">
+
+                <TextView
+                    android:id="@+id/tv_shangpin_dianpyu_kuaidi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/cl_999"
+                    android:textSize="32px"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_shangpin_dianpyu_yuexiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textColor="@color/cl_999"
+                    android:textSize="32px"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_shangpin_dianpyu_dizhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:text=""
+                    android:textColor="@color/cl_999"
+                    android:textSize="32px"></TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_shangpin_xiangqing_pingjia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/tv_shangpin_xinxi_pingjiatxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="23dp"
+                    android:text="评价"
+                    android:textColor="@color/cl_333"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_shangpin_xiangqing_commentSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@+id/tv_shangpin_xinxi_pingjiatxt"
+                    android:text=""
+                    android:textColor="@color/cl_999"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="23dp"
+                    android:src="@mipmap/ic_dianpu_guanli_go" />
+
+                <View
+                    android:id="@+id/divider"
+                    style="@style/title_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_shangpin_xinxi_pingjiatxt"
+                    android:layout_marginTop="15dp">
+
+                </View>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_shangpin_xiangiqng_pinglun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_below="@+id/relativeLayout4"
+                android:layout_marginTop="30px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+
+
+                >
+
+                <View
+                    style="@style/title_view"
+                    android:layout_width="200px"
+                    android:layout_height="1px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="商品信息"
+                    android:textColor="#333"
+                    android:textSize="34px" />
+
+                <View
+                    style="@style/title_view"
+                    android:layout_width="200px"
+                    android:layout_height="1px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="44px"
+                    android:layout_toEndOf="@+id/textView28"
+                    android:layout_toRightOf="@+id/textView28" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_shangpin_dianpu_xinxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30px"
+                android:paddingRight="30px" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_shangpin_dianbu_neirong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

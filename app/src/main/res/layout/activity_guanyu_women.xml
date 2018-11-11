@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1E2E3"
+    android:orientation="vertical"
+    tools:context="com.gloiot.hygoSupply.ui.activity.wode.GuanYuWoMenActivity">
+
+    <include
+        android:id="@+id/include8"
+        layout="@layout/include_head"></include>
+
+
+    <ImageView
+        android:id="@+id/gywm_icon"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_below="@+id/include8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+     />
+
+    <TextView
+        android:id="@+id/gywm_banben_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gywm_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:text="环游购商家版"
+        android:textColor="#666666"
+        android:textSize="24px" />
+
+    <ImageView
+        android:id="@+id/gywm_2dcode_img"
+        android:layout_width="242px"
+        android:layout_height="246px"
+        android:layout_below="@+id/gywm_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    <TextView
+        android:id="@+id/gywm_tishi_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gywm_2dcode_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24px"
+        android:text="扫描二维码，您的朋友也可以下载商城客户端"
+        android:textColor="@color/share_txt_color"
+        android:textSize="26px" />
+
+    <RelativeLayout
+        android:id="@+id/gywm_gengxin"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@+id/gywm_tishi_tv"
+        android:layout_marginTop="70px"
+        android:background="@color/cl_white">
+
+        <TextView
+            android:id="@+id/gywm_gengxin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24px"
+            android:gravity="fill_vertical"
+            android:text="检测更新"
+            android:textColor="@color/share_txt_color"
+            android:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/ic_gengduo" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/gywm_line"
+        style="@style/heng_line"
+        android:layout_below="@+id/gywm_gengxin"
+        android:layout_marginLeft="28px"
+        android:background="#E1E2E3" />
+
+    <RelativeLayout
+        android:id="@+id/gywm_shiyongbangzhu"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@+id/gywm_line"
+        android:background="@color/cl_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24px"
+            android:gravity="fill_vertical"
+            android:text="使用帮助"
+            android:textColor="@color/share_txt_color"
+            android:textSize="32px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:src="@mipmap/ic_gengduo" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gywm_tishi_tv"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="48px"
+        android:background="@android:color/black"
+        android:paddingBottom="24px"
+        android:paddingLeft="24px"
+        android:paddingRight="24px"
+        android:paddingTop="22px"
+        android:text="您使用的已是最新版本"
+        android:textColor="@android:color/white"
+        android:textSize="26px"
+        android:visibility="gone" />
+
+</RelativeLayout>

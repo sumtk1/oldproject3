@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include11"
+        layout="@layout/include_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_DPRZ_tijiao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include11">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_DPRZ_faren_xingming"
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:layout_marginTop="30px"
+                android:background="@color/cl_white"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <ImageView
+                    android:id="@+id/tv_01"
+                    style="@style/style_all_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/legal_person_name"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_DPRZ_faren_xingming"
+                    style="@style/style_all_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40px"
+                    android:layout_toRightOf="@id/tv_01"
+                    android:background="@null"
+                    android:hint="请输入法人姓名"
+                    android:singleLine="true"
+                    android:textColor="@color/cl_666" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_DPRZ_xinyong_daima"
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:layout_below="@+id/rl_DPRZ_faren_xingming"
+                android:layout_marginTop="30px"
+                android:background="@color/cl_white"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <ImageView
+                    android:id="@+id/tv_10"
+                    style="@style/style_all_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/credit_code"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:id="@+id/et_DPRZ_xinyong_daima"
+                    style="@style/style_all_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40px"
+                    android:layout_toRightOf="@id/tv_10"
+                    android:background="@null"
+                    android:hint="请输入统一社会信用代码"
+                    android:singleLine="true"
+                    android:textColor="@color/cl_666" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_DPRZ_xinyong_daima"
+                android:layout_marginTop="15dp"
+                android:background="@color/cl_white"
+                android:padding="30px">
+
+                <TextView
+                    android:id="@+id/tv_02"
+                    style="@style/style_all_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="营业执照" />
+
+                <ImageView
+                    android:id="@+id/iv_DPRZ_shangchuang_fuben01"
+                    android:layout_width="661px"
+                    android:layout_height="261px"
+                    android:layout_below="@id/tv_02"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30px"
+                    android:background="@mipmap/bg_yingyezhizhao"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tv_03"
+                    style="@style/style_all_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_DPRZ_shangchuang_fuben01"
+                    android:layout_marginTop="30px"
+                    android:text="其他资质" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_03"
+                    android:layout_marginTop="24px"
+                    android:background="@color/cl_white">
+
+                    <com.zyd.wlwsdk.widge.swipe.NoSlipGridview
+                        android:id="@+id/gd_DPRZ_pictures_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:clipChildren="true"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="1"
+                        android:verticalSpacing="3px" />
+
+                    <ImageView
+                        android:id="@+id/iv_DPRZ_shangchuang_fuben02"
+                        android:layout_width="661px"
+                        android:layout_height="261px"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="30px"
+                        android:background="@mipmap/bg_qitazizhi"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_DPRZ_xize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relativeLayout2"
+                    android:layout_marginTop="20px"
+                    android:text="*《认证标准细则》，请点击阅读"
+                    android:textColor="@color/cl_dingdan_binahao"
+                    android:textSize="24px" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_DPRZ_tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cl_ff7f29"
+        android:text="确认上传"
+        android:textColor="@color/cl_white"
+        android:textSize="36px" />
+</RelativeLayout>

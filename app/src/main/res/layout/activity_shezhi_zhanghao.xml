@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_marginTop="30px"
+        android:background="@color/cl_white"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号"
+            android:textSize="32px" />
+
+        <EditText
+            android:id="@+id/et_zhanghao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入账号"
+            android:maxLength="8"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+            android:maxLines="1"
+            android:textColor="@color/cl_666"
+            android:textSize="32px" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:text="- 账号只能设置一次，设置完成自动锁定\n- 账号设置完成后可以使用该账号进行登录"
+        android:textSize="28px" />
+
+    <Button
+        android:id="@+id/btn_queren"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="140px"
+        android:background="@drawable/bg_btn_confirm"
+        android:text="确定"
+        android:textColor="@color/cl_white"
+        android:textSize="34px" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

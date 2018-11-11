@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_shangpin_guanli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_shangpin_guanli_selctedpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50px"
+            android:paddingLeft="26px"
+            android:paddingTop="80px"
+            android:src="@mipmap/icon_not_to_choose"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_item_shangpin_guanli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26px"
+            android:layout_toRightOf="@+id/item_shangpin_guanli_selctedpic"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/item_shangpin_guanli_top"
+                android:layout_width="match_parent"
+                android:layout_height="208px">
+
+                <ImageView
+                    android:id="@+id/item_shangpin_guanli_leftpic"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_marginTop="28px"
+                    android:layout_marginRight="28px"
+                    />
+
+                <ImageView
+                    android:id="@+id/item_shangpin_guanli_quanqiugou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70px"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15px"
+                    android:layout_marginRight="10px"
+                    android:layout_toEndOf="@+id/item_shangpin_guanli_leftpic"
+                    android:layout_toRightOf="@+id/item_shangpin_guanli_leftpic"
+                    android:src="@mipmap/ic_quanqiugou"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/item_shangpin_guanli_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="28px"
+                    android:layout_toEndOf="@+id/item_shangpin_guanli_quanqiugou"
+                    android:layout_toRightOf="@+id/item_shangpin_guanli_quanqiugou"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/item_shangpin_guanli_kucun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_shangpin_guanli_name"
+                    android:layout_marginTop="28px"
+                    android:layout_toRightOf="@+id/item_shangpin_guanli_leftpic"
+                    android:text="库存:"
+                    android:textColor="#999"
+                    android:textSize="28px" />
+                <TextView
+                    android:id="@+id/item_shangpin_guanli_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_shangpin_guanli_name"
+                    android:layout_marginTop="28px"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/item_shangpin_guanli_kucun"
+                    android:text="销量："
+                    android:visibility="gone"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/item_shangpin_guanli_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/item_shangpin_guanli_kucun"
+                    android:layout_below="@+id/item_shangpin_guanli_kucun"
+                    android:layout_marginTop="20px"
+                    android:text=""
+                    android:textColor="#999"
+                    android:textSize="28px" />
+
+                <Button
+                    android:id="@+id/btn_item_shangpin_guanli_shenhe_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginRight="30px"
+                    android:background="@drawable/bg_btn_shangpin_guanli_fillet04"
+                    android:text=""
+                    android:textColor="@color/cl_white"
+                    android:textSize="12sp"
+                    android:focusable="false"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

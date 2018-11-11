@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="-2dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/cl_activity_newmain" />
+            <stroke
+                android:width="1px"
+                android:color="@color/cl_activity_newmain" />
+            <corners
+                android:topLeftRadius="8px" />
+        </shape>
+    </item>
+</layer-list>

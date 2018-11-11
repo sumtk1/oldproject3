@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_fenxiangeweima"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@id/in_titlebar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="40px"
+                android:background="@drawable/bg_dialog"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="164px">
+
+                    <ImageView
+                        android:id="@+id/iv_ewm_touxiang"
+                        android:layout_width="120px"
+                        android:layout_height="120px"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginTop="12px"
+                        android:background="@mipmap/ic_defaulthead1"
+                        app:layout_auto_basewidth="height" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="30px"
+                        android:layout_toRightOf="@+id/iv_ewm_touxiang"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_ewm_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textSize="32px" />
+
+                            <ImageView
+                                android:id="@+id/iv_sex"
+                                android:layout_width="40px"
+                                android:layout_height="40px"
+                                android:layout_toRightOf="@+id/tv_ewm_name"
+                                android:layout_weight="1"
+                                app:layout_auto_basewidth="height" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_ewm_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="123456789"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_ewm"
+                    android:layout_width="500px"
+                    android:layout_height="500px"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    app:layout_auto_basewidth="height" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="20px"
+                    android:text="请使用微信扫一扫"
+                    android:textColor="#666666"
+                    android:textSize="28px" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rl_ewm_weixin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_ewm_01"
+                android:layout_width="64px"
+                android:layout_height="64px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24px"
+                android:background="@mipmap/ic_wechat"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_ewm_01"
+                android:layout_centerHorizontal="true"
+                android:text="分享到微信"
+                android:textColor="#666666"
+                android:textSize="24px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ewm_pengyouquan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_ewm_02"
+                android:layout_width="64px"
+                android:layout_height="64px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24px"
+                android:background="@mipmap/ic_pengyouquan"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_ewm_02"
+                android:layout_centerHorizontal="true"
+                android:text="分享到朋友圈"
+                android:textColor="#666666"
+                android:textSize="24px" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

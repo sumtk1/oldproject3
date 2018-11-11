@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <title>
+            js调用java
+        </title>
+    </head>
+    
+    <body>
+        <p>
+            <xmp id="show">
+            </xmp>
+        </p>
+        <p>
+            <xmp id="init">
+            </xmp>
+        </p>
+        <p>
+            <input type="text" id="text1" value="用户名(username)" />
+        </p>
+        <p>
+            <input type="text" id="text2" value="password" />
+        </p>
+        <p>
+            <input type="button" id="enter" value="closeweb" onclick="closeweb();"
+            />
+            <button onclick="pay();">测试aa</button>
+        </p>
+        <p>
+            <input type="button" id="enter1" value="unablegoback" onclick="unablegoback();"
+            />
+        <p>
+            <input type="button" id="enter6" value="通讯录" onclick="addressBook();"
+            />
+        <p>
+            <input type="button" id="enter3" value="相册" onclick="getphoto();"
+            />
+        <p>
+            <input type="button" id="enter4" value="商品详情" onclick="shopinfo();"
+            />
+        <p>
+            <input type="button" id="enter5" value="登录页" onclick="login();"
+            />
+        </p>
+        <p>
+            <input type="button" id="enter2" value="显示html" onclick="zyksdk.toast('111111111')" />
+
+            <button onclick="location='www.baidu.com'">测试</button>
+        </p>
+        <p>
+            <input type="file" value="打开文件" onclick="abc();"/>
+        </p>
+
+        <div id="bbbbb" style="color:red;"></div>
+    </body>
+
+    <script>
+
+
+	document.getElementById("bbbbb").innerHTML = '1';
+
+    function bb(){
+    var data = {};
+        data.key = 'keyppppp';
+        data.value = 'valueppppp';
+        zykjssdk.getData(data,function(data){
+             document.getElementById("bbbbb").innerHTML = data;
+        });
+    }
+
+    function bbb(){
+        var data = {};
+        data.key = 'keyppppp';
+        data.value = 'valueppppp';
+
+        zyksdk.pay(data,function(data2){
+             document.getElementById("bbbbb").innerHTML = data2;
+        });
+
+        zyksdk.unionpay(data);
+    }
+
+    function pp(){
+
+        var data = {};
+        data.key = 'keyppppp';
+        data.value = 'valueppppp';
+        zykjssdk.WXPay(data,function(data){
+             document.getElementById("show").innerHTML = JSON.stringify(data);
+        });
+    }
+
+    //收银台
+        function pay() {
+            p_golbal.pay({
+                appid: "d678efh567hg6787",  //公众账号id
+                mch_id: "1230000109",       //商户号
+                body:"积分充值",             //订单标题
+                sign: "C380BEC2BFD727A4B6845133519F3AD6",    //签名
+                prepay_id: "20150806125346",     //预支付订单id
+                detail: "充值100送100",     //展示商品详情
+                total_fee: "100",                     //展示支付金额
+                type: ["支付宝","微信支付","银联支付","红利支付"],   //收银台显示多种支付方式
+                success: function (res) {
+                    // 验证订单是否创建成功
+                    alert(res);
+                }
+            });
+
+        }
+
+
+        function closeweb(){
+            p_golbal.func({
+                type: "closeweb",
+                success: function (res) {
+                    alert(res);
+                }
+            });
+        }
+
+
+
+        function unablegoback(){
+            p_golbal.func({
+                type: "unablegoback",
+                success: function (res) {
+                    alert(res);
+                }
+            });
+        }
+
+        function addressBook(){
+            p_golbal.func({
+                type: "addressBook",
+                success: function (res) {
+                    alert(res);
+                }
+            });
+        }
+
+
+        function getphoto(){
+            p_golbal.func({
+                type: "getphoto",
+                success: function (res) {
+                    alert(res);
+                }
+            });
+        }
+
+
+        function shopinfo(){
+            p_golbal.func({
+                type: "shopinfo",
+                shopid:"1209",
+                success: function (res) {
+                    alert(res);
+                }
+            });
+        }
+
+
+        function login(){
+            p_golbal.func({
+                type: "login",
+                success: function (res) {
+                    alert(res);
+                }
+            });
+        }
+
+<!--跳转商品详情-->
+<!--shopinfo-->
+<!--参数：shopid 商品id-->
+<!--返回数据：无-->
+
+<!--跳转登录页-->
+<!--login-->
+<!--参数：无-->
+<!--返回数据：-->
+<!--{"状态":"成功","onlyid":"123123123123123123"}-->
+<!--{"状态":"失败"}-->
+
+<!--选取手机图片-->
+<!--getphoto-->
+<!--参数：无-->
+<!--返回数据：-->
+<!--{"状态":"成功","地址":"http：123123/123123.png"}-->
+<!--{"状态":"失败"}-->
+
+    </script>
+
+</html>

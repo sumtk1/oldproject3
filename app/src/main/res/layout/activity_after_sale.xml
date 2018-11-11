@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gloiot.hygoSupply.ui.activity.dingdanguanli.aftersale.AfterSaleActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_after_sale_operation"
+        android:layout_below="@+id/include">
+
+        <LinearLayout
+            android:id="@+id/activity_after_sale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/ll_after_sale_operation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_after_sale_refuse"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bg_btn_ff5c3c"
+            android:text="拒绝申请"
+            android:textColor="@color/cl_white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_after_sale_contact"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/ll_after_sale_agree"
+            android:background="@drawable/bg_btn_ff6d33"
+            android:text="联系买家"
+            android:textColor="@color/cl_white"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_after_sale_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:id="@+id/btn_after_sale_agree"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_btn_ff7e28"
+                android:text="同意申请"
+                android:textColor="@color/cl_white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

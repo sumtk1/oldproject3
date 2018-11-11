@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray">
+
+    <include
+        android:id="@+id/include5"
+        layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chakan_wuliu"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include5"
+        android:visibility="gone"
+        android:background="@color/cl_background"
+        android:paddingLeft="30px">
+
+        <ImageView
+            android:id="@+id/iv_chakan_wuliu"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_chakan_wuliu_wuliuzhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_chakan_wuliu"
+            android:layout_marginLeft="20px"
+            android:layout_toEndOf="@+id/iv_chakan_wuliu"
+            android:layout_toRightOf="@+id/iv_chakan_wuliu"
+            android:text="物流状态"
+            android:textColor="@color/cl_black"
+            android:textSize="24px"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_chakan_wuliu_zhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_chakan_wuliu_wuliuzhuangtai"
+            android:layout_toEndOf="@+id/tv_chakan_wuliu_wuliuzhuangtai"
+            android:layout_toRightOf="@+id/tv_chakan_wuliu_wuliuzhuangtai"
+            android:text=" "
+            android:textColor="#FF2E0D"
+            android:textSize="24px"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_marginTop="30px"
+            android:id="@+id/tv_chakan_wuliu_yundan_bianhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_chakan_wuliu_chengyun_laiyuan"
+            android:layout_alignStart="@+id/tv_chakan_wuliu_chengyun_laiyuan"
+            android:text="运单编号:"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_chakan_wuliu_chengyun_laiyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_chakan_wuliu_wuliuzhuangtai"
+            android:layout_alignStart="@+id/tv_chakan_wuliu_wuliuzhuangtai"
+            android:layout_below="@+id/tv_chakan_wuliu_yundan_bianhao"
+            android:text="承运公司:"
+            android:textSize="28px" />
+
+
+        <TextView
+            android:id="@+id/tv_chakan_wuliu_guanfang_dianhua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_chakan_wuliu_yundan_bianhao"
+            android:layout_alignStart="@+id/tv_chakan_wuliu_yundan_bianhao"
+            android:layout_below="@+id/tv_chakan_wuliu_chengyun_laiyuan"
+            android:text="承运电话:"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_chakan_wuliu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_chakan_wuliu"
+        android:layout_marginTop="30px"
+        android:background="@color/cl_white"
+        android:divider="@null"
+        android:visibility="gone">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_chakan_wuliu_zanwu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="350px"
+        android:layout_below="@+id/include5"
+        android:layout_gravity="center"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_hongli_mingxi_no_zhangdan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_hongli_mingxi_no_zhangdan_img"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40px"
+            android:text="暂无物流信息"
+            android:textColor="#666"
+            android:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/iv_hongli_mingxi_no_zhangdan_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_zanwu_wuliu"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

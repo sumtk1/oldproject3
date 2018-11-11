@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/cl_background">
+
+    <LinearLayout
+        android:id="@+id/ll_yxhd_manebaoyou"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="310px"
+        android:orientation="vertical"
+        android:background="@color/cl_white"
+        android:layout_weight="1"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="6px"
+        android:layout_marginTop="24px"
+        >
+        <ImageView
+            android:layout_width="146px"
+            android:layout_height="146px"
+            android:src="@mipmap/manebaoyou"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="58px"
+            android:layout_marginBottom="16px"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="满额包邮"
+            android:textColor="@color/cl_666666"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_yxhd_youhuiquan"
+        android:layout_width="wrap_content"
+        android:layout_height="310px"
+        android:layout_marginLeft="6px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="24px"
+        android:layout_weight="1"
+        android:background="@color/cl_white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="146px"
+            android:layout_height="146px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16px"
+            android:layout_marginTop="58px"
+            android:src="@mipmap/youhuiquan" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="优惠券"
+            android:textColor="@color/cl_666666"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</LinearLayout>

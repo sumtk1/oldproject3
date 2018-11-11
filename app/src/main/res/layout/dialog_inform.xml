@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500px"
+    android:layout_height="495px"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/im_inform_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="22px"
+        android:paddingTop="22px"
+        android:src="@mipmap/ic_inform_delete" />
+
+    <TextView
+        android:id="@+id/tv_inform_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36px"
+        android:text="通知"
+        android:textColor="@color/contents_text"
+        android:textSize="38px" />
+
+    <TextView
+        android:id="@+id/tv_inform_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_inform_title"
+        android:layout_centerHorizontal="true"
+        android:lineSpacingExtra="12px"
+        android:padding="30px"
+        android:text=""
+        android:textColor="@color/cl_333333"
+        android:textSize="30px" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/include_head" />
+
+
+            <RelativeLayout
+                android:layout_below="@+id/include3"
+                android:layout_width="match_parent"
+                android:layout_height="240px"
+                android:layout_marginTop="24px"
+                android:background="@drawable/bg_circular_white">
+
+                <EditText
+                    android:id="@+id/et_fabu_video_neirong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="30px"
+                    android:background="@null"
+                    android:hint="好的标题能带来更高的关注度哟~"
+                    android:textColor="#999999"
+                    android:textSize="30px"
+                    android:maxLength="50"
+                    android:gravity="top|left"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30px"
+                    android:layout_marginBottom="30px"
+                    android:layout_alignParentBottom="true"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_fabu_video_words"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#666666"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        android:textColor="#666666"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/tv_tianjia_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50"
+                        android:textColor="#666666"
+                        android:textSize="28px" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_fabu_video_fabu"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="95px"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="发 布"
+        android:textColor="@color/cl_white"
+        android:textSize="32px"
+
+        />
+
+</RelativeLayout>

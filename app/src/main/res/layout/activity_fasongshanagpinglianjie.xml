@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_head" />
+
+    <ListView
+        android:id="@+id/lv_shangpinglianjie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/but_fasong_lianjie"
+        android:layout_below="@+id/in_titlebar"
+        android:background="#f5f6f7"/>
+
+    <Button
+        android:id="@+id/but_fasong_lianjie"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="发送链接"
+        android:textColor="@color/cl_white"
+        android:textSize="32px" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_no_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/in_titlebar"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/iv_hongli_mingxi_no_zhangdan_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_zanwu_shangpin"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/tv_hongli_mingxi_no_zhangdan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_hongli_mingxi_no_zhangdan_img"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="90px"
+            android:layout_marginTop="40px"
+            android:text="暂无商品"
+            android:textColor="#666"
+            android:textSize="32px"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

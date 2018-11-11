@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gloiot.hygoSupply.ui.activity.postproduct.ProductDetailListActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_head" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/include"
+        android:layout_gravity="top"
+        android:background="#cffef1e8"
+        android:drawableLeft="@mipmap/ic_promotional_warning"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:text="点击内容可直接进行编辑"
+        android:textColor="#ff666666"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_product_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hint"
+        android:layout_above="@+id/btn_product_details_list_save"
+        />
+
+
+    <Button
+        android:id="@+id/btn_product_details_list_save"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cl_tianjia_guige_btn"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/cl_white"
+        android:textSize="16sp" />
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+
+    <TextView
+        android:id="@+id/tv_chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_radius_cecece"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#fefefe"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_chat_time"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="name"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/iv_chat_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_default" />
+
+            <RelativeLayout
+                android:id="@+id/rl_chat_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/common_chat_left">
+
+                <RelativeLayout
+                    android:layout_width="250dp"
+                    android:layout_height="85dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_chat_sp_icon"
+                        android:layout_width="53dp"
+                        android:layout_height="53dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/tv_chat_sp_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/iv_chat_sp_icon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/iv_chat_sp_icon"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textColor="@color/chat_333333"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tv_chat_sp_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/iv_chat_sp_icon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/iv_chat_sp_icon"
+                        android:text=""
+                        android:textColor="@color/chat_ff436f"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

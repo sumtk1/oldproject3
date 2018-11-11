@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:background="@color/cl_white"
+        android:layout_marginTop="24px">
+
+        <TextView
+            android:id="@+id/tv_tixiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可提现（元）"
+            android:textSize="26px"
+            android:textColor="@color/cl_333333"
+            android:layout_marginLeft="39px"
+            android:layout_marginTop="40px" />
+
+        <TextView
+            android:id="@+id/tv_tixiang_jine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textSize="62px"
+            android:textColor="#ff7f29"
+            android:layout_below="@+id/tv_tixiang"
+            android:layout_marginLeft="39px"
+            android:layout_marginTop="24px"
+            android:layout_marginBottom="40px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_00"
+        android:layout_width="match_parent"
+        android:layout_height="193px"
+        android:layout_below="@+id/rl_01"
+        android:layout_marginTop="24px"
+        android:background="@color/cl_white">
+
+        <RelativeLayout
+            android:id="@+id/rl_02"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_height="96px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:textColor="@color/cl_333333"
+                android:layout_centerVertical="true"
+                android:text="提现账户"/>
+            <TextView
+                android:id="@+id/tv_fanxiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/tixian_xuanze"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"/>
+            <TextView
+                android:id="@+id/tv_tianjia_yinhangka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="63px"
+                android:textColor="@color/cl_999999"
+                android:textSize="30px"
+                android:text="请选择提现账户" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/cl_bg_view"
+            android:layout_marginLeft="30px"
+            android:layout_below="@+id/rl_02"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_bukebianji"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/view"
+            android:layout_marginLeft="30px"
+            android:visibility="visible"
+            android:layout_height="96px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:textColor="@color/cl_333333"
+                android:layout_centerVertical="true"
+                android:text="提现金额"/>
+
+            <TextView
+                android:id="@+id/tv_tixiang_jin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:imeOptions="flagNoExtractUi"
+                android:longClickable="false"
+                android:textColorHint="@color/cl_999999"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="25px"
+                android:background="@null"
+                android:numeric="integer"
+                android:gravity="right|center"
+                android:text="0"
+                android:textColor="#ff7f29"
+                android:layout_marginRight="30px"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/et_tixiang_jine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="请输入提现金额"
+                android:textSize="30px"
+                android:textColorHint="@color/cl_999999"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="25px"
+                android:background="@null"
+                android:enabled="false"
+                android:numeric="integer"
+                android:gravity="right|center"
+                android:text="0"
+                android:textColor="#ff7f29"
+                android:layout_marginRight="30px"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tixiang_shuoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22px"
+        android:textColor="@color/cl_666666"
+        android:layout_below="@+id/rl_00"
+        android:layout_marginTop="26px"
+        android:layout_marginLeft="30px"
+        android:text=""/>
+    
+    <Button
+        android:id="@+id/btn_lijitiqu"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_alignParentBottom="true"
+        android:text="立即提取"
+        android:textSize="32px"
+        android:textColor="@color/cl_white"
+        android:background="#FF7F29"/>
+</RelativeLayout>

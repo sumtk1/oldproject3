@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="myicon" format="reference" />
+    <attr name="mycolor" format="color" />
+    <attr name="text" format="string" />
+    <attr name="text_size" format="dimension" />
+    <declare-styleable name="ChangeColorIconView">
+        <attr name="myicon" />
+        <attr name="mycolor" />
+        <attr name="text" />
+        <attr name="text_size" />
+    </declare-styleable>
+
+    <!-- autolayout -->
+    <declare-styleable name="AutoLayout_Layout">
+
+        <attr name="layout_auto_basewidth">
+            <flag name="width" value="1" />
+            <flag name="height" value="2" />
+            <flag name="textSize" value="4" />
+            <flag name="padding" value="8" />
+            <flag name="margin" value="16" />
+            <flag name="marginLeft" value="32" />
+            <flag name="marginTop" value="64" />
+            <flag name="marginRight" value="128" />
+            <flag name="marginBottom" value="256" />
+            <flag name="paddingLeft" value="512" />
+            <flag name="paddingTop" value="1024" />
+            <flag name="paddingRight" value="2048" />
+            <flag name="paddingBottom" value="4096" />
+        </attr>
+
+        <attr name="layout_auto_baseheight">
+            <flag name="width" value="1" />
+            <flag name="height" value="2" />
+            <flag name="textSize" value="4" />
+            <flag name="padding" value="8" />
+            <flag name="margin" value="16" />
+            <flag name="marginLeft" value="32" />
+            <flag name="marginTop" value="64" />
+            <flag name="marginRight" value="128" />
+            <flag name="marginBottom" value="256" />
+            <flag name="paddingLeft" value="512" />
+            <flag name="paddingTop" value="1024" />
+            <flag name="paddingRight" value="2048" />
+            <flag name="paddingBottom" value="4096" />
+            <flag name="minWidth" value="8192" />
+            <flag name="maxWidth" value="16384" />
+            <flag name="minHeight" value="32768" />
+            <flag name="maxHeight" value="65536" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="MetroLayout">
+        <attr name="metro_divider" format="dimension" />
+    </declare-styleable>
+    <!-- autolayout -->
+
+
+    <!--LoopView-->
+    <declare-styleable name="androidWheelView">
+        <attr name="awv_textsize" format="integer" />
+        <attr name="awv_lineSpace" format="float" />
+        <attr name="awv_centerTextColor" format="integer" />
+        <attr name="awv_outerTextColor" format="integer" />
+        <attr name="awv_dividerTextColor" format="integer" />
+        <attr name="awv_itemsVisibleCount" format="integer" />
+        <attr name="awv_isLoop" format="boolean" />
+        <attr name="awv_initialPosition" format="integer" />
+        <attr name="awv_scaleX" format="float" />
+    </declare-styleable>
+    <!--LoopView-->
+
+
+    <!-- ActionSheet -->
+    <declare-styleable name="ActionSheets">
+        <attr name="actionSheetStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ActionSheet">
+        <attr name="actionSheetBackground" format="color|reference" />
+        <attr name="cancelButtonBackground" format="color|reference" />
+        <attr name="otherButtonTopBackground" format="color|reference" />
+        <attr name="otherButtonMiddleBackground" format="color|reference" />
+        <attr name="otherButtonBottomBackground" format="color|reference" />
+        <attr name="otherButtonSingleBackground" format="color|reference" />
+        <attr name="cancelButtonTextColor" format="color|reference" />
+        <attr name="otherButtonTextColor" format="color|reference" />
+        <attr name="actionSheetPadding" format="dimension|reference" />
+        <attr name="otherButtonSpacing" format="dimension|reference" />
+        <attr name="cancelButtonMarginTop" format="dimension|reference" />
+        <attr name="actionSheetTextSize" format="dimension|reference" />
+    </declare-styleable>
+    <!-- ActionSheet -->
+
+    <!-- 仿ios的SwitchButton -->
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean" />
+        <attr name="primaryColor" format="color" />
+        <attr name="primaryColorDark" format="color" />
+        <attr name="isOpened" format="boolean" />
+    </declare-styleable>
+
+
+    <!--扫描二维码-->
+    <declare-styleable name="innerrect">
+        <attr name="inner_width" format="dimension" />
+        <attr name="inner_height" format="dimension" />
+        <attr name="inner_margintop" format="dimension" />
+        <attr name="inner_corner_color" format="color" />
+        <attr name="inner_corner_length" format="dimension" />
+        <attr name="inner_corner_width" format="dimension" />
+        <attr name="inner_scan_bitmap" format="reference" />
+        <attr name="inner_scan_speed" format="integer" />
+        <attr name="inner_scan_iscircle" format="boolean" />
+    </declare-styleable>
+    <!--三级列表选择-->
+    <declare-styleable name="NumberPicker">
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selecredTextColor" format="color" />
+        <attr name="selecredTextSize" format="dimension" />
+        <attr name="unitHight" format="dimension" />
+        <attr name="itemNumber" format="integer" />
+        <attr name="lineColor" format="color" />
+        <attr name="maskHight" format="dimension" />
+        <attr name="noEmpty" format="boolean" />
+        <attr name="isEnable" format="boolean" />
+    </declare-styleable>
+</resources>

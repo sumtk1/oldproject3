@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#2b9ced">
+
+        <TextView
+            android:id="@+id/tv_title_pay_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="支付成功"
+            android:textColor="#ffffff"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_payee_img"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginTop="50px"
+            android:background="@mipmap/ic_shiming_correct" />
+
+        <TextView
+            android:id="@+id/tv_pay_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="支付成功" />
+
+        <TextView
+            android:id="@+id/tv_need_pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="￥" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_bg_click"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="300px"
+        android:background="@drawable/bg_btn_confirm"
+        android:text="確定"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>

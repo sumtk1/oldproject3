@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <include
+        android:id="@+id/include8"
+        layout="@layout/include_two_head" />
+
+    <com.zyd.wlwsdk.widge.NoScrollViewPager
+        android:id="@+id/vp_shangpin_guanli_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include8" />
+
+    <LinearLayout
+        android:id="@+id/shangpin_guanli_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:layout_gravity="bottom"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cl_white"
+            >
+
+            <ImageView
+                android:id="@+id/spgl_quanxuan_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30px"
+                android:paddingRight="16px"
+                android:src="@mipmap/icon_not_to_choose"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"
+                android:textSize="32px"
+                android:textColor="@color/share_txt_color"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/spgl_quanxuan_img"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/xiajia_default_bg"
+            >
+            <TextView
+                android:id="@+id/spgl_xiajia_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="26px"
+                android:text=""
+                android:textSize="32px"
+                android:paddingRight="26px"
+                android:textColor="@color/cl_white"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

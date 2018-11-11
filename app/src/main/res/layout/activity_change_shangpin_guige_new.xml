@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include8"
+        layout="@layout/include_head" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="400px"
+        android:layout_below="@+id/include8"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30px"
+        android:background="@color/cl_white"
+        android:orientation="vertical"
+        android:paddingLeft="31px">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:background="@color/cl_white"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="fill_vertical"
+                android:text="颜色"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+
+            <include layout="@layout/include_view" />
+
+            <EditText
+                android:id="@+id/et_change_shangpin_guige_yanse"
+                android:layout_width="525px"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/iv_item_shangpin_guige_shanchu"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/iv_item_shangpin_guige_shanchu"
+                android:layout_marginLeft="130px"
+                android:layout_toRightOf="@+id/textView12"
+                android:background="@null"
+                android:gravity="fill_vertical"
+                android:hint="商品颜色"
+                android:textColor="@color/cl_text"
+                android:textColorHint="@color/cl_666"
+                android:textSize="32px" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:background="@color/cl_white"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="fill_vertical"
+                android:text="尺寸"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+
+            <include layout="@layout/include_view" />
+
+            <EditText
+                android:id="@+id/et_change_shangpin_guige_chicun"
+                android:layout_width="525px"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="130px"
+                android:layout_toRightOf="@+id/textView13"
+                android:background="@null"
+                android:gravity="fill_vertical"
+                android:hint="商品尺寸大小"
+                android:textColor="@color/cl_text"
+                android:textColorHint="@color/cl_666"
+                android:textSize="32px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:background="@color/cl_white"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="fill_vertical"
+                android:text="供货价"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+
+            <include layout="@layout/include_view" />
+
+            <EditText
+                android:id="@+id/et_change_shangpin_guige_jiage"
+                android:layout_width="525px"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="100px"
+                android:layout_toRightOf="@+id/textView17"
+                android:background="@null"
+                android:hint="给商品定个好价格"
+                android:inputType="numberDecimal|number"
+                android:maxLength="9"
+                android:textColor="@color/cl_text"
+                android:textColorHint="@color/cl_666"
+                android:textSize="32px" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:background="@color/cl_white"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="fill_vertical"
+                android:text="建议销售价"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+
+            <include layout="@layout/include_view" />
+
+            <EditText
+                android:id="@+id/tv_change_shangpin_guige_jianyijia"
+                style="@style/style_all_et"
+                android:layout_width="525px"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40px"
+                android:layout_toRightOf="@+id/textView14"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="numberDecimal|number"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:background="@color/cl_white"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/et_change_shangpin_guige_kucun"
+                android:layout_width="525px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="130px"
+                android:layout_toRightOf="@+id/textView15"
+                android:background="@null"
+                android:gravity="fill_vertical"
+                android:hint="设置合理库存避免超卖"
+                android:inputType="number"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="fill_vertical"
+                android:text="库存"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="30px"-->
+    <!--android:layout_marginLeft="31px"-->
+    <!--android:textColor="#666"-->
+    <!--android:textSize="24px"-->
+    <!--android:text="说明:  1.单价为商品的销售价\n           2.结算价为商家的利润  \n           3.单价设置过高会影响销售价"-->
+    <!--android:layout_below="@+id/linearLayout4"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true">-->
+    <!--</TextView>-->
+
+</RelativeLayout>

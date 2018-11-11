@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zyd.wlwsdk.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray">
+
+    <include
+        android:id="@+id/include11"
+        layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bianji_dianpu_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include11">
+
+        <View
+            android:id="@+id/view_bianjidianpu"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#bfbfbf" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_bianjidianpu"
+            android:background="@color/cl_white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+
+                <TextView
+                    android:id="@+id/textView25"
+                    style="@style/style_all_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="店铺头像" />
+
+                <ImageView
+                    android:id="@+id/iv_bianji_dianpu_icon"
+                    android:layout_width="101px"
+                    android:layout_height="101px"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_chuangjian_dianpu_add" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_bianjidianpu2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/include11"
+                android:layout_marginLeft="30px"
+                android:background="#bfbfbf" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dianpu_mingchen"
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:id="@+id/tv_01"
+                    style="@style/style_all_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/et_bianji_dianpu_name"
+                    android:layout_alignBottom="@+id/et_bianji_dianpu_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="店铺名称" />
+
+                <EditText
+                    android:id="@+id/et_bianji_dianpu_name"
+                    style="@style/style_all_et"
+                    android:layout_width="550px"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@id/tv_01"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入您的店铺名称"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/cl_black" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/include11"
+                android:layout_marginLeft="30px"
+                android:background="#bfbfbf" />
+
+            <RelativeLayout
+                android:id="@+id/rl_bianji_dinapu_leimu"
+                android:layout_width="match_parent"
+                android:layout_height="96px">
+
+                <TextView
+                    android:id="@+id/tv_zhuyingleimu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:text="主营类目"
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/tv_bianji_dianpu_zhuyingleibie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30px"
+                    android:layout_toRightOf="@+id/tv_zhuyingleimu"
+                    android:gravity="center|right"
+                    android:textColor="@color/cl_666"
+                    android:textSize="30px"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/sp_bianji_dianpu_zhuyingleimu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="200px"
+                    android:layout_marginRight="30px"
+                    android:layout_toRightOf="@+id/tv_zhuyingleimu"
+                    android:background="@null"
+                    android:dropDownVerticalOffset="96px"></Spinner>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_divide"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/include11"
+                android:layout_marginLeft="30px"
+                android:background="#bfbfbf" />
+
+            <RelativeLayout
+                android:id="@+id/rl_dianpu_jieshao"
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px">
+
+                <TextView
+                    android:id="@+id/tv_04"
+                    style="@style/style_all_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBaseline="@+id/et_bianji_dianpu_jieshao"
+                    android:layout_alignBottom="@+id/et_bianji_dianpu_jieshao"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="店铺介绍" />
+
+                <EditText
+                    android:id="@+id/et_bianji_dianpu_jieshao"
+                    style="@style/style_all_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/tv_04"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:hint="一句话介绍您的店铺"
+                    android:maxLines="2"
+                    android:text="" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_dianzhaotupian"
+            android:layout_width="match_parent"
+            android:layout_height="361px"
+            android:layout_below="@+id/linearLayout8"
+            android:layout_marginTop="44px"
+            android:background="@color/cl_white"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28px"
+                android:text="背景图片"
+                android:textColor="@color/cl_black"
+                android:textSize="30px" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView45"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="30px"-->
+            <!--android:layout_toEndOf="@+id/textView43"-->
+            <!--android:layout_toRightOf="@+id/textView43"-->
+            <!--android:text="图片尺寸建议750*250"-->
+            <!--android:textColor="#666"-->
+            <!--android:textSize="26px" />-->
+            <ImageView
+                android:id="@+id/iv_bianji_dianpu_dianzhao"
+                android:layout_width="662px"
+                android:layout_height="261px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80px"
+                android:src="@mipmap/bg_tianjia_shangpu" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_bianji_dianpu_wancheng"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="72px"
+            android:background="@color/cl_ff7f29"
+            android:text="创建店铺"
+            android:textColor="@color/cl_white"
+            android:textSize="36px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bianji_dianpu_yunxinghuodong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/include11">
+
+        <include layout="@layout/activity_yunxinghuodong" />
+    </LinearLayout>
+
+
+</com.zyd.wlwsdk.autolayout.AutoRelativeLayout>

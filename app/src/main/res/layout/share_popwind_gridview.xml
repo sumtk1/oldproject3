@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_white"
+	 >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:orientation="vertical"
+		android:layout_gravity="center_horizontal"
+        >
+    
+        <ImageView 
+            android:id="@+id/share_popwind_Img"
+	        android:layout_width="80px"
+	   		android:layout_height="80px"
+	   		android:src="@mipmap/ic_app_icon"
+	   		android:layout_gravity="center_horizontal"
+			android:layout_marginTop="38px"
+			android:scaleType="centerInside"
+            /> 
+        <TextView 
+            android:id="@+id/share_popwind_txt"
+            android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+            android:layout_marginTop="16px"
+            android:textColor="@color/share_txt_color"
+            android:textSize="26px"
+			android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            />
+	</LinearLayout>
+</RelativeLayout>

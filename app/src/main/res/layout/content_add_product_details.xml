@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gloiot.hygoSupply.ui.activity.postproduct.AddProductDetailsActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_head" />
+
+    <EditText
+        android:id="@+id/et_add_product_details_describe"
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="12dp"
+        android:gravity="top"
+        android:padding="15dp"
+        android:text="智利进口把爱带回家，产地直运，鲜甜多汁。"
+        android:textColor="#ff333333"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_add_product_details_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:id="@+id/rl_add_product_details_save"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/cl_tianjia_guige_btn"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/cl_white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_dianpu_guanli"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray">
+
+    <include
+        android:id="@+id/include15"
+        layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_dianpu_guangli_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include15"
+        android:background="@color/cl_white">
+
+        <ImageView
+            android:id="@+id/iv_dianpu_guanli_tubiao"
+            android:layout_width="154px"
+            android:layout_height="154px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="36px"
+            android:background="@drawable/iv_yuanjiao_dianpu_guanli" />
+
+        <TextView
+            android:id="@+id/tv_dianpu_guanli_mingcheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26px"
+            android:layout_marginTop="38px"
+            android:layout_toRightOf="@+id/iv_dianpu_guanli_tubiao"
+            android:singleLine="true"
+            android:textColor="@color/cl_black"
+            android:textSize="32px"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_dianpurenzheng_zhuantai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dianpu_guanli_mingcheng"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="16px"
+            android:layout_toRightOf="@+id/iv_dianpu_guanli_tubiao"
+            android:padding="10px">
+
+            <ImageView
+                android:id="@+id/iv_renzheng_go"
+                android:layout_width="wrap_content"
+                android:layout_height="40px"
+                android:layout_alignBottom="@+id/tv_renzheng"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:gravity="center"
+                android:src="@mipmap/ic_dianpu_guanli_go" />
+
+            <TextView
+                android:id="@+id/tv_dianpu_guanli_renzheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_renzheng"
+                android:layout_marginRight="20px"
+                android:layout_toLeftOf="@+id/iv_renzheng_go"
+                android:gravity="bottom"
+                android:text=""
+                android:textColor="@color/cl_999"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tv_renzheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="店铺认证"
+                android:textColor="@color/cl_333"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_baozhengjin_zhuantai"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/rl_dianpurenzheng_zhuantai"-->
+        <!--android:layout_marginLeft="24px"-->
+        <!--android:layout_toRightOf="@+id/iv_dianpu_guanli_tubiao"-->
+        <!--android:padding="10px">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_baozheng"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="保证金"-->
+        <!--android:textColor="@color/cl_333"-->
+        <!--android:textSize="30px" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_jiaona_go"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40px"-->
+        <!--android:layout_alignBottom="@+id/tv_baozheng"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="30px"-->
+        <!--android:gravity="center"-->
+        <!--android:src="@mipmap/ic_dianpu_guanli_go" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_dianpu_guanli_jiaona"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/iv_jiaona_go"-->
+        <!--android:layout_marginRight="20px"-->
+        <!--android:layout_toLeftOf="@+id/iv_jiaona_go"-->
+        <!--android:gravity="bottom"-->
+        <!--android:text=""-->
+        <!--android:textColor="@color/cl_999"-->
+        <!--android:textSize="30px" />-->
+        <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_dianpu_guanli_shuoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_dianpu_guangli_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:text=""
+        android:textColor="@color/cl_999"
+        android:textSize="24px" />
+</RelativeLayout>

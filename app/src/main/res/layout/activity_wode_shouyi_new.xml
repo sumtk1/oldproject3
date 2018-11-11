@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_wode_shouyi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/include_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_wode_shouyi_top"
+        android:layout_width="match_parent"
+        android:layout_height="370px"
+        android:layout_below="@+id/include3"
+        android:background="@mipmap/bg_wode_shouyi">
+
+        <TextView
+            android:id="@+id/tv_wodeshouyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35px"
+            android:text="总账户（元）"
+            android:textColor="@color/cl_white"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/tv_wode_shouyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_wodeshouyi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5px"
+            android:text="0.00"
+            android:textColor="#Ffffff"
+            android:textSize="62px" />
+
+
+        <TextView
+            android:id="@+id/tv_shangpingfenrun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_wode_shouyi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15px"
+            android:drawableRight="@mipmap/mingxi_anniu"
+            android:text="推广佣金（元）  2000  明细   "
+            android:textColor="@color/cl_white"
+            android:textSize="24px" />
+
+        <View
+            android:id="@+id/v_01"
+            android:layout_width="680px"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_shangpingfenrun"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48px"
+            android:background="#30ffffff" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_shouyi_bzj"
+            android:layout_width="238px"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/v_01"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="44px"
+                android:layout_height="44px"
+                android:layout_gravity="center"
+                android:layout_marginTop="17px"
+                android:background="@mipmap/ic_shouyi_bzj" />
+
+            <TextView
+                android:id="@+id/tv_shouyi_jnstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5px"
+                android:text="缴纳保证金"
+                android:textColor="@color/cl_white"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:layout_below="@+id/v_01"
+            android:layout_marginTop="40px"
+            android:layout_toRightOf="@+id/ll_shouyi_bzj"
+            android:background="#30ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_shouyi_cz"
+            android:layout_width="238px"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/v_01"
+            android:layout_toRightOf="@+id/ll_shouyi_bzj"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="44px"
+                android:layout_height="44px"
+                android:layout_gravity="center"
+                android:layout_marginTop="17px"
+                android:background="@mipmap/ic_shouyi_cz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5px"
+                android:text="充值"
+                android:textColor="@color/cl_white"
+                android:textSize="24px" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="36px"
+            android:layout_below="@+id/v_01"
+            android:layout_marginTop="40px"
+            android:layout_toRightOf="@+id/ll_shouyi_cz"
+            android:background="#30ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_shouyi_tx"
+            android:layout_width="238px"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/v_01"
+            android:layout_toRightOf="@+id/ll_shouyi_cz"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="44px"
+                android:layout_height="44px"
+                android:layout_gravity="center"
+                android:layout_marginTop="17px"
+                android:background="@mipmap/ic_shouyi_tx" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5px"
+                android:text="提现"
+                android:textColor="@color/cl_white"
+                android:textSize="24px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_shouyijilv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_wode_shouyi_top"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="24px"
+        android:text="收益记录"
+        android:textColor="@color/cl_666"
+        android:textSize="30px" />
+
+    <com.gloiot.hygoSupply.widget.RefreshLayout
+        android:id="@+id/wode_shouyi_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_shouyijilv">
+
+        <ListView
+            android:id="@+id/wode_shouyi_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none" />
+    </com.gloiot.hygoSupply.widget.RefreshLayout>
+
+</RelativeLayout>

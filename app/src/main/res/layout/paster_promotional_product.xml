@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_promotional_waring"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#fef1e8"
+        android:drawableLeft="@mipmap/ic_promotional_warning"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:text="请选择参与活动的商品"
+        android:textColor="#ff666666"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_promotional_addimg"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/bg_color"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:src="@mipmap/ic_promotional_addproduct"
+        android:visibility="gone" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_promotional_display"
+        android:layout_width="match_parent"
+        android:layout_height="360dp">
+
+
+        <ImageView
+            android:id="@+id/iv_promotional_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_after_sale_result2"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:id="@+id/tv_promotional_describe"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="#8f000000"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:textColor="#fffffefe"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="top"
+            android:background="#cffef1e8"
+            android:drawableLeft="@mipmap/ic_promotional_warning"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="13dp"
+            android:text="点击图片可重新选择商品"
+            android:textColor="#ff666666"
+            android:textSize="12sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

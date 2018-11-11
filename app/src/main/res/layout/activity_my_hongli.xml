@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background">
+
+    <include
+        android:id="@+id/include9"
+        layout="@layout/include_head" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout222"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include9"
+        android:layout_marginTop="20px"
+        android:background="@color/cl_white"
+        android:orientation="vertical"
+        android:paddingLeft="30px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="30px">
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="50px"
+                android:src="@mipmap/ic_my_hongli_tubiao" />
+
+            <TextView
+                android:id="@+id/tv_activity_my_hongli_keti_hongli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView19"
+                android:layout_marginLeft="18px"
+                android:layout_marginStart="18px"
+                android:layout_toEndOf="@+id/imageView19"
+                android:layout_toRightOf="@+id/imageView19"
+                android:text="可提红利"
+                android:textColor="@color/cl_black" />
+
+            <TextView
+                android:id="@+id/tv_wode_hongli_keti_hongli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_activity_my_hongli_keti_hongli"
+                android:layout_alignStart="@+id/tv_activity_my_hongli_keti_hongli"
+                android:layout_below="@+id/tv_activity_my_hongli_keti_hongli"
+                android:layout_marginTop="5px"
+                android:text="￥"
+                android:textColor="@color/cl_black"
+                android:textSize="38px" />
+
+            <Button
+                android:id="@+id/btn_activity_my_hongli_liji_tiqu"
+                android:layout_width="200px"
+                android:layout_height="80px"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_activity_my_hongli_keti_hongli"
+                android:background="@drawable/bg_btn_confirm"
+                android:text="立即提取"
+                android:textColor="#FFF"
+                android:textSize="32px"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <include layout="@layout/include_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20px"
+            android:paddingRight="30px"
+            android:paddingTop="20px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_activity_my_hongli_wodehongli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的红利:"
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/tv_wode_hongli_wode_hongli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text=""
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_activity_my_hongli_yijiesuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已结算："
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/tv_wode_hongli_yijiesuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20px"
+            android:paddingRight="30px"
+            android:paddingTop="20px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_activity_my_hongli_weijiesuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未结算:"
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/tv_wode_hongli_weijiesuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text=""
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_activity_my_hongli_yitiqu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已提取："
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/tv_wode_hongli_yitiqu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_my_hongli_mingxi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout222"
+        android:layout_marginTop="30px"
+        android:background="@color/cl_white"
+        android:dividerHeight="10px"
+        android:visibility="visible">
+
+    </ListView>
+</RelativeLayout>
+
+

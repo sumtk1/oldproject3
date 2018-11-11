@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_after_sale_order"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="拒绝详情"
+        android:textColor="@color/cl_333"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cl_e1e2e3" />
+
+    <TextView
+        android:id="@+id/tv_after_sale_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/cl_666"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_after_sale_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/cl_666"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/cl_e1e2e3" />
+
+</LinearLayout>

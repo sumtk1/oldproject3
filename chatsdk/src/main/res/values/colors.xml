@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="spilt_line">#CFCFCF</color>
+    <color name="btn_send_textcolor">@color/white</color>
+    <color name="btn_select">#888888</color>
+    <color name="common_bg">@color/white</color>
+
+    <color name="toolbar_spilt_line">#CDCDCD</color>
+    <color name="toolbar_btn_select">#D9D9D9</color>
+    <color name="toolbar_btn_nomal">@color/white</color>
+
+    <color name="base_middle_gray">#f3f3f3</color>
+    <color name="base_middle_gray_light">#f8f8f8</color>
+
+    <color name="qq_bg">#ecedf1</color>
+
+
+    <!-- imagePicker -->
+    <color name="theme_body">#cc22292c</color>
+    <color name="status_bar">#303135</color>
+    <color name="top_bar">#9f556061</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="chat_333333">#333333</color>
+    <color name="chat_ff436f">#ff436f</color>
+
+    <!-- imagePicker -->
+    <color name="ic_back_press">#323336</color>
+    <color name="ip_color_primary">#393A3F</color>
+    <color name="ip_color_primary_dark">#303135</color>
+    <color name="ip_color_primary_trans">#ec2f3335</color>
+    <color name="ip_color_press">#ffe0e0e0</color>
+    <color name="ip_camera_pre">#353535</color>
+    <color name="ip_color_accent">#1AAD19</color>
+    <color name="ip_text_secondary_inverted">#66ffffff</color>
+    <color name="ip_text_primary_inverted">#ffffff</color>
+</resources>

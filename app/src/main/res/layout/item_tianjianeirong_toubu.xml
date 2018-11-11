@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_tianjianeorong_bianji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:layout_marginTop="23px"
+        android:background="@drawable/bg_circular_white">
+
+        <EditText
+            android:id="@+id/et_bianji_biaoti"
+            android:layout_width="match_parent"
+            android:layout_height="201px"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="好的标题能带来更高的关注度哟~"
+            android:padding="30px"
+            android:textSize="30px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/et_bianji_biaoti"
+            android:layout_marginRight="30px">
+
+            <TextView
+                android:id="@+id/tv_suggestion_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_suggestion_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="23px"
+        android:layout_below="@+id/rl_tianjianeorong_bianji"
+        android:background="@color/cl_bg_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bianji_zhanshitupian"
+        android:layout_width="match_parent"
+        android:layout_height="301px"
+        android:layout_below="@+id/rl_tianjianeorong_bianji"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:layout_marginTop="23px"
+        android:background="@drawable/bg_circular_white">
+
+        <ImageView
+            android:id="@+id/im_bianji_zhanshitupian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/im_bianji_zhanshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68px"
+            android:src="@mipmap/ic_bianji_tianjia" />
+
+        <TextView
+            android:id="@+id/tv_tianjiazhanshitupian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_bianji_zhanshi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29px"
+            android:text="添加展示图片"
+            android:textColor="#666666"
+            android:textSize="26px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="23px"
+        android:layout_below="@+id/rl_bianji_zhanshitupian"
+        android:background="@color/cl_bg_gray" />
+
+</RelativeLayout>

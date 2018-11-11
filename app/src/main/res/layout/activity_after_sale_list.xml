@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_wode_shouyi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_head" />
+
+    <com.gloiot.hygoSupply.widget.RefreshLayout
+        android:id="@+id/refreshlayout_after_sale_list"
+        android:layout_below="@+id/include"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_after_sale_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </com.gloiot.hygoSupply.widget.RefreshLayout>
+</RelativeLayout>

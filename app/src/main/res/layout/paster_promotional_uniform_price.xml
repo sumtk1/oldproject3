@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center"
+            android:text="商品原价"
+            android:textColor="#ff666666"
+            android:textSize="16sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_promotional_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text=""
+            android:textColor="#ffff436f"
+            android:textSize="16sp" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:background="#ffe1e2e3" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center"
+            android:text="活动价"
+            android:textColor="#ff666666"
+            android:textSize="16sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_promotional_price_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ic_num_add" />
+
+        <TextView
+            android:id="@+id/tv_promotional_uniform_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/iv_promotional_price_add"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/cl_text"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_promotional_price_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="23dp"
+            android:layout_toLeftOf="@+id/tv_promotional_uniform_price"
+            android:src="@mipmap/ic_num_sub" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:background="#ffe1e2e3" />
+
+    </RelativeLayout>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center"
+            android:text="商品数量"
+            android:textColor="#ff666666"
+            android:textSize="16sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_promotional_num_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ic_num_add" />
+
+        <TextView
+            android:id="@+id/tv_promotional_uniform_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/iv_promotional_num_add"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/cl_text"
+            android:textSize="16sp" />
+
+    <ImageView
+            android:id="@+id/iv_promotional_num_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="23dp"
+            android:layout_toLeftOf="@+id/tv_promotional_uniform_num"
+            android:src="@mipmap/ic_num_sub" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:background="#ffe1e2e3" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

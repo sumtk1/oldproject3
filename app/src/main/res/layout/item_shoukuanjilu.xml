@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_shoukuanjilu"
+        android:layout_width="match_parent"
+        android:layout_height="170px"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/iv_jilu_icon"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="26px"
+            android:layout_toRightOf="@id/iv_jilu_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_jilu_shuoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="24px" />
+
+            <LinearLayout
+                android:id="@+id/ll_jilu_beizhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="备注："
+                    android:textColor="#666666"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/tv_jilu_beizhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="24px" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_jilu_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23px"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="22px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_jilu_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="40px"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

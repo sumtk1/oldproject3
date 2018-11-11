@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zyd.wlwsdk.autolayout.AutoFrameLayout
+        android:id="@+id/fl_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="132px"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/rl_image_scope"
+                android:layout_width="140px"
+                android:layout_height="132px">
+
+                <ImageView
+                    android:id="@+id/iv_message_portrait"
+                    android:layout_width="96px"
+                    android:layout_height="96px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/message_ic_friends_application"
+                    app:layout_auto_baseheight="width" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="26px"
+                android:ellipsize="end"
+                android:maxWidth="300px"
+                android:singleLine="true"
+                android:textColor="#999999"
+                android:textSize="26px" />
+
+            <ImageView
+                android:id="@+id/iv_message_no_disturb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_message_time"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="18px"
+                android:src="@mipmap/common_ic_no_disturb"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_message_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="24px"
+                android:layout_toLeftOf="@id/tv_message_time"
+                android:layout_toRightOf="@id/rl_image_scope"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tv_message_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_message_title"
+                android:layout_marginLeft="16px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="18px"
+                android:layout_toLeftOf="@id/iv_message_no_disturb"
+                android:layout_toRightOf="@id/rl_image_scope"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#999999"
+                android:textSize="26px" />
+
+            <View
+                android:id="@+id/view_1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#E0E0E0"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </com.zyd.wlwsdk.autolayout.AutoFrameLayout>
+    <View
+        android:id="@+id/view_20"
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:layout_below="@+id/fl_01"
+        android:background="#E0E0E0"
+        android:visibility="gone" />
+</RelativeLayout>

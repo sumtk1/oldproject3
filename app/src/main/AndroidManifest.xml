@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gloiot.hygoSupply">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <application
+        android:name=".ui.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+
+        <meta-data
+            android:name="design_width"
+            android:value="720" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.activity.login.ForgetPasswordActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.activity.login.ZhifumimaActivity" />
+        <activity android:name=".ui.activity.wode.setting.MySettingActivity" />
+        <activity android:name=".ui.activity.wode.setting.zhanghuyuanquan.MyChangePwdActivity" />
+        <activity android:name=".ui.activity.wode.setting.gerenxinxi.ChangeFahuodiActivity" />
+        <activity android:name=".ui.activity.wode.setting.gerenxinxi.MyInfoActivity" />
+        <activity android:name=".ui.activity.wode.setting.gerenxinxi.MyNichengActivity" />
+        <activity android:name=".ui.activity.dingdanguanli.DingdanActivity" />
+        <activity android:name=".ui.activity.dingdanguanli.DingdanXiangqingActivity" />
+        <activity android:name=".ui.activity.dingdanguanli.TuikuanxiangqingActivity" />
+        <activity android:name=".ui.activity.login.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.shangpinshangchuan.TianjiaShangpinGuigeActivity_new"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.activity.wode.setting.zhanghuyuanquan.AnquanShezhiActivity" />
+        <activity
+            android:name=".ui.activity.wode.setting.zhanghuyuanquan.AnquanShezhiActivity1"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.activity.shangpinshangchuan.ShangPinShangChuanActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.activity.shangpinguanli.ShangpinGuanliActivity" />
+        <activity android:name=".ui.activity.shangpinshangchuan.ShangpinMiaoshuActivity" />
+        <activity android:name=".ui.activity.dingdanguanli.QuerenFahuoActivity" />
+        <activity android:name=".ui.activity.wode.shoukuan.ShouKuanJiLuActivity" />
+        <activity android:name=".ui.activity.wode.tuihuodizhi.TianJiaTuiHuoDiZhiActivity" />
+        <activity android:name=".ui.activity.wode.tuihuodizhi.TuiHuoDiZhiActivity" />
+        <activity
+            android:name=".ui.activity.wode.shoukuan.WoYaoShouKuanActivity"
+            android:theme="@style/OrangeTheme">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity android:name=".ui.activity.dianpuguanli.BianjiDianpuActivity" />
+        <activity android:name=".ui.activity.dianpuguanli.WodeDianpuActivity" />
+        <activity android:name=".ui.activity.dingdanguanli.DingdanGuanliActivity" />
+        <!-- <activity android:name=".ui.activity.shangpinshangchuan.ChangeShangpinGuigeActivity1" /> -->
+        <activity android:name=".ui.activity.shangpinshangchuan.ChangeShangpinMiaoshuActivity" />
+        <activity android:name=".ui.activity.dingdanguanli.ChakanWuliuActicity" />
+        <activity android:name=".ui.activity.dianpuguanli.ShangpinDianpuActivity" />
+        <activity android:name=".ui.activity.wode.shouyi.ShouyiTiquActivity" />
+        <activity android:name=".ui.activity.shangpinshangchuan.XuanzeShangPinLeixingAvtivity" />
+        <activity android:name=".ui.activity.shangpinshangchuan.DizhiXuanzeActivity" />
+        <activity
+            android:name=".ui.activity.dianpuguanli.DianpuGuanliActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.activity.dianpuguanli.DianPuRenZhengActivity" />
+        <activity android:name=".ui.activity.dianpuguanli.RenZhengBiaoZhunXiZe_SonActivity" />
+        <activity android:name=".ui.activity.dianpuguanli.RenZhengBiaoZhunXiZeActivity" />
+        <activity android:name=".ui.activity.dingdanguanli.DingDanXiangQing_NewActivity" />
+        <activity android:name=".ui.activity.dingdanguanli.XieShangTuiKuanActivity" />
+        <activity android:name=".ui.activity.dingdanguanli.TongYiTuiHuoActivity" />
+        <activity android:name=".ui.activity.dingdanguanli.QingxuanzeKefuActivity" />
+        <activity android:name=".ui.activity.dingdanguanli.DanduFahuoActivity" />
+        <activity android:name=".ui.activity.dingdanguanli.JuJueShenQingActivity" />
+        <activity android:name=".ui.activity.dianpuguanli.PreviewPictureActivity" />
+        <activity android:name=".ui.activity.wode.setting.gerenxinxi.GengHuanShouJiActivity" />
+        <activity android:name=".ui.activity.wode.setting.gerenxinxi.ShuRuShouJiActivity" />
+        <activity android:name=".ui.activity.wode.shouyi.WoDeShouYiXiangQingActivity" />
+        <activity android:name=".ui.activity.wode.shouyi.XuanZeTiXianActivity" />
+        <activity android:name=".ui.activity.shangpinshangchuan.FreightTemplateActivity" />
+        <activity android:name=".ui.activity.shangpinshangchuan.FreightTemplateDetails" />
+        <activity android:name=".ui.activity.wode.shimingrenzheng.ShiMingRenZhengActivity" />
+        <activity android:name=".ui.activity.wode.GuanYuWoMenActivity" />
+        <activity android:name=".ui.activity.wode.shouyi.ShangPingFenRunActivity" />
+        <activity android:name=".ui.activity.wode.FenXiangEWeiMaActivity" />
+        <activity android:name=".ui.activity.remenzixun.ReMenZiXunActivity" />
+        <activity android:name=".ui.activity.wode.kefuzhongxin.KeFuZhongXinActivity" />
+        <activity android:name=".ui.activity.wode.kefuzhongxin.SelectKeFuRegionActivity" />
+        <activity android:name=".ui.activity.wode.kefuzhongxin.SelectKeFuActivity" />
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity android:name=".ui.activity.message.SystemMessageActivity" />
+        <activity android:name=".ui.activity.message.WuLiuMessageActivity" />
+        <activity android:name=".ui.activity.message.ConversationActivity" />
+        <activity android:name=".ui.activity.message.ZhangDanMessageActivity" />
+        <activity android:name=".ui.activity.message.XiangQingActivity" />
+        <activity android:name=".ui.activity.payment.PaymentResultsActivity" />
+        <activity android:name=".ui.activity.payment.SettlementActivity" />
+        <activity android:name=".ui.activity.yunyinghuodong.ManEBaoYouActivity" />
+        <activity android:name=".ui.activity.yunyinghuodong.XuanZeQuYuActivity" />
+        <activity android:name=".ui.activity.yunyinghuodong.YouHuiQuanActivity" />
+        <activity android:name=".ui.activity.yunyinghuodong.ChuangJianYouHuiQuanActivity" />
+        <activity
+            android:name=".ui.activity.wode.fadongtai.BianJiNeiRongActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.wode.fadongtai.FaShangPingZhuangTaiActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.activity.wode.fadongtai.ShiPingLuZhiActivity" />
+        <activity
+            android:name=".ui.activity.wode.fadongtai.TianJiaNeiRongActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.activity.wode.fadongtai.FabuVideoActivity" />
+        <activity android:name=".ui.activity.wode.fadongtai.VideoActivity" />
+        <activity android:name=".ui.activity.wode.yinhangka.BangDingYinHangKaActivity" />
+        <activity android:name=".ui.activity.wode.yinhangka.WoDeYinHangKaActivity" />
+        <activity android:name=".ui.activity.wode.fadongtai.BianjiShangpinActivity" />
+        <activity android:name=".ui.activity.SaoMiaoActivity" />
+        <activity android:name=".ui.activity.evaluation.EvaluationActivity" />
+        <activity android:name=".ui.activity.evaluation.UserEvaluationActivity" />
+        <activity android:name=".ui.activity.shangpinguanli.ViewProductActivity" />
+        <activity android:name=".ui.activity.dianpuguanli.shopgrade.ShopGradeActivity" />
+        <activity android:name=".ui.activity.dianpuguanli.shopgrade.GradeDetailActivity" />
+        <activity android:name=".ui.activity.wode.shouyi.ShouYiTiXiangActivity" />
+        <activity android:name=".ui.activity.wode.shouyi.ZhuanYHKXiangQingActivity" />
+        <activity
+            android:name=".ui.activity.shangpinguanli.ViewShangpinGuigeActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.shangpinguanli.ViewShangpinMiaoshuActivity" />
+        <activity android:name=".ui.activity.evaluation.DisplayPictureActivity" />
+        <!-- <activity -->
+        <!-- android:name=".ui.activity.WebActivityForVideo1" -->
+        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+        <!-- android:windowSoftInputMode="stateHidden|adjustResize" /> -->
+        <activity
+            android:name="com.tencent.smtt.sdk.VideoActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.tencent.smtt.tbs.video.PLAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.gloiot.hygoSupply.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".ui.activity.wode.fadongtai.XuanZeiShanagPingLianJIeActivity" />
+        <activity android:name=".ui.activity.shangpinguanli.AuditResultActivity" />
+        <activity android:name=".ui.activity.wode.shouyi.GainRecoredActivity" />
+        <activity android:name=".ui.activity.dingdanguanli.aftersale.AfterSaleListActivity" />
+
+        <!-- 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.dingdanguanli.FasongShanagPingLianJieActivity" />
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden|fontScale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.activity.dingdanguanli.aftersale.AfterSaleActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ui.activity.promotional.PromotionalAvtivities"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.activity.promotional.ParticipateActivities" />
+        <activity
+            android:name=".ui.activity.web.WebActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".ui.activity.wode.shouyi.BaoZhengJin02Activity" />
+        <activity android:name=".ui.activity.wode.shouyi.BaoZhengJin01Activity" />
+        <activity android:name=".ui.activity.wode.shouyi.ChongZhiActivity" />
+        <activity android:name=".ui.activity.wode.shouyi.JiaoNaJiLuActivity" />
+        <activity android:name=".ui.activity.wode.shouyi.JiaoNaXiangQingActivity" />
+        <activity android:name=".ui.activity.wode.shouyi.JiaoNaJiLuXiangQingActivity" />
+        <activity android:name=".ui.activity.wode.shouyi.AliXiangQingActivity" />
+        <activity android:name=".ui.activity.promotional.EventDescriptionActivity" />
+        <activity android:name=".ui.activity.promotional.ShopPromotionActivity" />
+        <activity android:name=".ui.activity.promotional.ShopPromotionRecordActivity" />
+        <activity android:name=".ui.activity.wode.zhifubao.AddAlipayActivity" />
+        <activity android:name=".ui.activity.wode.zhifubao.WoDeZhiFuBaoActivity" />
+        <activity android:name=".ui.activity.wode.xitongxiaoxi.SendSystemMessageActivity" />
+        <activity android:name=".ui.activity.wode.xitongxiaoxi.SystemMessageRecordActivity" />
+        <activity android:name=".ui.activity.wode.xitongxiaoxi.SystemMessageDetailActivity" />
+        <activity android:name=".ui.activity.postproduct.PostProductActivity" />
+        <activity android:name=".ui.activity.postproduct.AddProductDetailsActivity" />
+        <activity android:name=".ui.activity.postproduct.AddSpecificationsActivity" />
+        <activity android:name=".ui.activity.postproduct.ChoiceProudtcTypeActivity" />
+        <activity android:name=".ui.activity.postproduct.FreightTemplateActivity" />
+        <activity android:name=".ui.activity.postproduct.FreightTemplateDetails" />
+        <activity android:name=".ui.activity.postproduct.ProductDetailListActivity" />
+        <activity android:name=".ui.activity.postproduct.EditProductSpecificationActivity" />
+        <activity android:name=".ui.activity.wode.setting.ZhangHaoQieHuanActivity" />
+    </application>
+
+</manifest>

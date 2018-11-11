@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/include_head" />
+
+    <ListView
+        android:id="@+id/lv_bianji_neirong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_bianji_tianjiatupian"
+        android:layout_below="@+id/include3"
+
+        android:dividerHeight="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bianji_tianjiatupian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/but_bianji_fabu"
+       >
+
+
+        <ImageView
+            android:id="@+id/im_bianji_tianjiatupian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:src="@mipmap/ic_bianji_tianjiatupian" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_bianji_tianjiatupian"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15px"
+            android:layout_marginBottom="15px"
+            android:text="添加内容" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/but_bianji_fabu"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="发 布"
+        android:textColor="@color/cl_white"
+        android:textSize="32px" />
+
+</RelativeLayout>

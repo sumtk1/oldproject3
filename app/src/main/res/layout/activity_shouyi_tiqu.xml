@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/include_head">
+    </include>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include3"
+        android:layout_marginTop="20px"
+        android:background="@color/cl_white"
+        android:orientation="vertical"
+        android:paddingLeft="30px">
+
+        <RelativeLayout
+            android:id="@+id/rl_shouyi_tiqu"
+            android:layout_width="match_parent"
+            android:layout_height="170px">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:text="总收益"
+                android:textColor="#666666"
+                android:textSize="30px" />
+            <!--<Button-->
+            <!--android:id="@+id/btn_shouyi_tiqu_xiangqing"-->
+            <!--android:layout_width="100px"-->
+            <!--android:layout_height="50px"-->
+            <!--android:background="@drawable/bg_btn_my_tiqu_xiangqing"-->
+            <!--android:text="详情"-->
+            <!--android:textColor="#333"-->
+            <!--android:textSize="28px"-->
+            <!--android:layout_alignTop="@+id/textView2"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginRight="30px"-->
+            <!--/>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginLeft="138px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@color/cl_black"
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/tv_shouyi_tiqu_zongshouyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100.00"
+                    android:textColor="@color/cl_black"
+                    android:textSize="64px" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="16px"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80px">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="提取"
+                android:textColor="#333333"
+                android:textSize="32px" />
+
+            <EditText
+                android:id="@+id/et_shouyi_tiqu_zhuanchushouyi"
+                style="@style/style_all_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40px"
+                android:layout_toEndOf="@+id/textView4"
+                android:layout_toRightOf="@+id/textView4"
+                android:background="@null"
+                android:hint="请输入转出收益(100的倍数)"
+                android:inputType="number"
+                android:maxLength="9" />
+        </RelativeLayout>
+
+        <include layout="@layout/include_view" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80px">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="密码"
+                android:textColor="@color/cl_black"
+                android:textSize="32px" />
+
+            <EditText
+                android:id="@+id/et_shouyi_tiqu_mima"
+                style="@style/style_all_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40px"
+                android:layout_toEndOf="@+id/textView5"
+                android:layout_toRightOf="@+id/textView5"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:inputType="textPassword" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_forget_password_confirm"
+        android:layout_alignStart="@+id/btn_forget_password_confirm"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="16px"
+        android:text="注: 输入积分须是100的倍数。转到我的红利"
+        android:textColor="@color/cl_999"
+        android:textSize="28px" />
+
+    <Button
+        android:id="@+id/btn_shouyi_tiqu_lijitiqu"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_btn_confirm"
+        android:text="立即提取"
+        android:textColor="#ffffff"
+        android:textSize="36px" />
+
+
+</RelativeLayout>

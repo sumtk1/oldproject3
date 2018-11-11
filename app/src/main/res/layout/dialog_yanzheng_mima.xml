@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zyd.wlwsdk.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500px"
+    android:layout_height="600px"
+    android:background="@drawable/bg_loading"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="44px"
+        android:src="@mipmap/ic_change_password" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34px"
+        android:text="验证原密码"
+        android:textColor="#000000"
+        android:textSize="32px" />
+
+    <EditText
+        android:id="@+id/et_mima"
+        style="@style/edittext_guanbiaoColor"
+        android:layout_width="match_parent"
+        android:layout_height="74px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="32px"
+        android:layout_marginTop="44px"
+        android:background="@drawable/et_yuanmima_bg"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:maxLines="1"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:textColor="#666666"
+        android:textColorHint="#666666"
+        android:textSize="32px" />
+
+    <Button
+        android:id="@+id/btn_queren"
+        android:layout_width="366px"
+        android:layout_height="80px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="44px"
+        android:background="@drawable/dialog_btn_normal"
+        android:text="确定"
+        android:textColor="@color/cl_white"
+        android:textSize="32px" />
+
+
+    <Button
+        android:id="@+id/btn_quxiao"
+        android:layout_width="366px"
+        android:layout_height="80px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/dialog_btn_cancel"
+        android:text="取消"
+        android:textColor="@color/cl_white"
+        android:textSize="32px" />
+
+
+</com.zyd.wlwsdk.autolayout.AutoLinearLayout>

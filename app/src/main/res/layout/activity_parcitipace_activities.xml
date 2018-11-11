@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_wode_shouyi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_background">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_head" />
+
+    <com.gloiot.hygoSupply.widget.RefreshLayout
+        android:id="@+id/refreshlayout_parcitipate_activities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_parcitipate_activities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </com.gloiot.hygoSupply.widget.RefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_new_activities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cl_white"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:drawableLeft="@mipmap/btn_new_activities"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="添加活动商品"
+            android:textColor="#ffff7f29"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

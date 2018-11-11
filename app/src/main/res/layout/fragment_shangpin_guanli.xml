@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f6f7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cl_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            android:background="#f6f6f6">
+
+            <ImageView
+                android:id="@+id/iv_srarch_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/ic_search" />
+
+            <EditText
+                android:id="@+id/et_shangpin_guanli_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:imeOptions="actionSearch"
+                android:layout_toLeftOf="@+id/iv_delete_icon"
+                android:layout_toRightOf="@+id/iv_srarch_icon"
+                android:background="@null"
+                android:maxLines="1"
+                android:inputType="text"
+
+                android:hint="输入商品名称或关键词进行搜索"
+                android:textColorHint="@color/cl_999"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_delete_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_text_delete" />
+        </RelativeLayout>
+
+        <com.gloiot.hygoSupply.widget.RefreshLayout
+            android:id="@+id/refreshlayout_fg_shangpin_guanli"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5f6f7">
+
+            <com.gloiot.hygoSupply.widget.MySwipeMenuListView
+                android:id="@+id/lv_fg_shangpin_guanli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/cl_white"
+                android:divider="#f5f6f7"
+                android:dividerHeight="20px" />
+        </com.gloiot.hygoSupply.widget.RefreshLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fg_shangpin_guanli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toptitle_rl"
+        android:layout_gravity="center"
+        android:layout_marginTop="20px"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_hongli_mingxi_no_zhangdan_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_zanwu_shangpin"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_hongli_mingxi_no_zhangdan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_hongli_mingxi_no_zhangdan_img"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="90px"
+            android:layout_marginTop="40px"
+            android:text="暂无商品"
+            android:textColor="#666"
+            android:textSize="32px"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</FrameLayout>

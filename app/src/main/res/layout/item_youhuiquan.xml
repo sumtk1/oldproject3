@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/cl_background"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:id="@+id/view_item_yhq_topfill"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_item_yhq_left"
+        android:layout_width="222px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_below="@+id/view_item_yhq_topfill"
+        android:background="@mipmap/youhuiquan_lv"
+        android:layout_alignBottom="@+id/ll_item_youhuixinxi"
+        android:layout_alignTop="@+id/ll_item_youhuixinxi"
+        >
+
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/ll_item_yhq_miane"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="68px"-->
+            <!--android:layout_marginLeft="62px"-->
+            <!--&gt;-->
+            <TextView
+                android:id="@+id/tv_item_yhq_fuhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cl_white"
+                android:text="￥"
+                android:textSize="18sp"
+                android:layout_marginTop="95px"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="54px"
+                />
+            <TextView
+                android:id="@+id/tv_item_yhq_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cl_white"
+                android:text="200"
+                android:textSize="30sp"
+                android:layout_marginTop="70px"
+                android:layout_toRightOf="@+id/tv_item_yhq_fuhao"
+                />
+        <!--</RelativeLayout>-->
+
+        <TextView
+            android:id="@+id/tv_item_yhq_lingquzhuangtai"
+            android:layout_below="@+id/tv_item_yhq_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f1f1f1"
+            android:text="领取中"
+            android:textSize="11sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18px"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_youhuixinxi"
+        android:layout_below="@+id/view_item_yhq_topfill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/youhuiquan_sp"
+        android:orientation="vertical"
+        android:paddingLeft="30px"
+        android:layout_toRightOf="@+id/rl_item_yhq_left"
+        android:layout_marginRight="32px"
+        >
+        <TextView
+            android:id="@+id/tv_item_yhq_mingcheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cl_333333"
+            android:text="优惠券名称优惠券名称优惠sfdasfasfdsaffdafdasfdasf"
+            android:textSize="15sp"
+            android:layout_marginTop="30px"
+            android:layout_marginRight="40px"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+
+            <TextView
+                android:id="@+id/tv_item_yhq_zongliang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cl_666666"
+                android:text="总量1001张"
+                android:textSize="11sp"
+                android:layout_marginTop="24px"
+                android:maxLines="2"
+                android:ellipsize="end"
+                />
+        <TextView
+            android:id="@+id/tv_item_yhq_youxiaoqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cl_666666"
+            android:text="有效期2017.05.24-06.11"
+            android:textSize="11sp"
+            android:layout_marginTop="24px"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16px"
+            android:layout_marginBottom="24px"
+            >
+            <Button
+                android:id="@+id/btn_item_yhq_tingzhi"
+                android:layout_width="122px"
+                android:layout_height="44px"
+                android:text="停止"
+                android:textColor="#49CDC3"
+                android:textSize="11sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24px"
+                android:background="@drawable/bg_button_11_shape"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

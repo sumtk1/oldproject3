@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/cl_white"
+        android:paddingLeft="32px">
+
+        <TextView
+            android:id="@+id/tv_item_shangpin_miaoshu_miaoshu"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:layout_marginTop="26px"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="添加图片和文字会让你的商品更具吸引力哟~"
+            android:textColorHint="@color/cl_et_color_hint"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/iv_item_shangpin_miaoshu_pic"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_item_shangpin_miaoshu_miaoshu"
+            android:layout_marginTop="28px"
+            android:src="@mipmap/ic_miaoshu_addpic" />
+
+        <ImageView
+            android:id="@+id/iv_item_shangpin_miaoshu_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/iv_item_shangpin_miaoshu_pic"
+            android:layout_alignRight="@+id/iv_item_shangpin_miaoshu_pic"
+            android:layout_alignTop="@+id/iv_item_shangpin_miaoshu_pic"
+            android:src="@mipmap/ic_shangpin_miaoshu_del"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_item_shangpin_miaoshu_del2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tv_item_shangpin_miaoshu_miaoshu"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tv_item_shangpin_miaoshu_miaoshu"
+            android:src="@mipmap/icon_tianjia_shangpin_shanchu"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

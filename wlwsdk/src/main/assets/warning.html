@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <title>网络出错~请点击按钮重新加载!</title>
+            <style>
+                .one h4{
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: normal;
+                    padding-top: 50%;
+                }
+            
+            button{padding: 0!important;}
+            
+            .two{
+                width: 100%;
+
+                padding-top: 30%;
+            }
+            
+            .two .fresh{
+                height:40px;
+                width:36%;
+                display: block;
+                border-radius:30px;
+                border: 1px solid #2B9CED;
+                background-color: #FFFFFF;
+                font-size: 12px;
+                color: #2B9CED;
+                outline:none!important;
+            }
+            
+            
+            @media (min-width:320px) and (max-width:359px) {
+                .one h4{
+                    padding-top:40%;
+                }
+                .two{
+                    padding: 15%  32%;
+                }
+            }
+            
+            @media (min-width:540px) and (max-width:640px) {
+                .one h4{
+                    padding-top:40%;
+                }
+                .two .fresh{
+                    width:30%;
+                }
+
+                .two{
+                    padding: 30%  35%;
+                }
+            }
+            
+            @media (min-width:720px) and (max-width:768px) {
+                .two .fresh{
+                    width:20%;
+                }
+
+                .two{
+                    padding: 30%  40%;
+                }
+            }
+
+                </style>
+            </head>
+    <body>
+        <div class="one">
+            <h4>网络出错~请点击按钮重新加载!</h4>
+        </div>
+        
+        <div class="two">
+            <center><button class="fresh" onclick="freshBtnClick()" >重试</button></center>
+        </div>
+    </body>
+    <script>
+        
+        function freshBtnClick(){
+            //调用原生的方法
+            Android.refresh();
+        }
+    
+        </script>
+</html>

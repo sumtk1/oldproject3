@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_hongli_duihuan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cl_background"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10px"
+            android:background="@color/cl_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="30px">
+
+            <TextView
+                android:id="@+id/tv_hongli_tiqu_shangci_jiesuan"
+                style="@style/style_all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上次结算时间:" />
+
+            <TextView
+                android:id="@+id/tv_hongli_tiqu_jiesuan_shijian"
+                style="@style/style_all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2016.06.06" />
+
+            <Button
+                android:id="@+id/btn_hongli_tiqu_mingxi_zhuangtai"
+                android:layout_width="150px"
+                android:layout_height="40px"
+                android:layout_marginRight="30px"
+                android:background="@drawable/bg_btn_confirm"
+                android:text="兑换明细"
+                android:textColor="@color/cl_white" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_hongli_jiesuan_fangshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="20px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:id="@+id/textView35"
+                style="@style/style_all_tv"
+                android:layout_width="664px"
+                android:layout_height="80px"
+                android:background="#E33333"
+                android:gravity="center"
+                android:text="请选择红利结算方式"
+                android:textColor="@color/cl_white" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_zhoujie_yuejie"
+                android:layout_width="match_parent"
+                android:layout_height="75px"
+                android:layout_below="@+id/textView35"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_hongli_tiqu_zhoujie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#BCBCBC"
+                    android:text="周结"
+                    android:textColor="@color/cl_white"
+                    android:textSize="32px" />
+
+                <Button
+                    android:id="@+id/btn_hongli_tiqu_yuejie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/cl_white"
+                    android:text="月结"
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_hongli_tiqu_shuoming"
+                android:layout_width="match_parent"
+                android:layout_height="170px"
+                android:layout_below="@+id/linearLayout_zhoujie_yuejie"
+                android:background="@color/cl_white"
+                android:paddingLeft="12px"
+                android:paddingRight="12px"
+                android:paddingTop="20px"
+                android:text="说明：周结需要每天提交一次积分；每次提取积分需收取1%的手续费。次月方可改变结算方式"
+                android:textColor="@color/cl_666"
+                android:textSize="26px" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/relativeLayout_hongli_jiesuan_fangshi"
+            android:layout_marginTop="20px"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80px">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="可提取红利"
+                    android:textColor="#333333"
+                    android:textSize="32px" />
+
+                <EditText
+                    android:id="@+id/et_my_tiqu_zhuanchushouyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="40px"
+                    android:background="@null"
+                    android:hint="0.00"
+                    android:textColorHint="#666"
+                    android:textSize="32px" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_view" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_fragment_hongli_selectBankCard"
+                android:layout_width="match_parent"
+                android:layout_height="80px">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="选择银行卡"
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+
+                <ImageView
+                    android:id="@+id/iv_hongli_tiqu_xuanze"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_wode_zd_xx" />
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/include_view" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px">
+
+                <TextView
+                    android:id="@+id/tv_jifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="积分"
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+
+                <EditText
+                    android:id="@+id/et_hongli_jifen"
+                    style="@style/style_all_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40px"
+                    android:layout_toEndOf="@+id/tv_jifen"
+                    android:layout_toRightOf="@+id/tv_jifen"
+                    android:background="@null"
+                    android:hint="请输入积分" />
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/include_view" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px">
+
+                <TextView
+                    android:id="@+id/tv_mima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="密码"
+                    android:textColor="@color/cl_black"
+                    android:textSize="32px" />
+
+                <EditText
+                    android:id="@+id/et_hongli_mima"
+                    style="@style/style_all_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40px"
+                    android:layout_toEndOf="@+id/tv_mima"
+                    android:layout_toRightOf="@+id/tv_mima"
+                    android:background="@null"
+                    android:hint="请输入密码" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_hongli_tiqu_lijitiqu"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="100px"
+            android:background="@drawable/bg_btn_confirm"
+            android:text="立即提取"
+            android:textColor="#ffffff"
+            android:textSize="36px" />
+
+    </RelativeLayout>
+</RelativeLayout>

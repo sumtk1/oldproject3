@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/cl_white"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="108dp">
+    <ImageView
+        android:id="@+id/iv_item_shop_promotion_record_type"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/fl_item_shop_promotion_record_image"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignTop="@+id/tv_item_shop_promotion_record_name"
+        android:layout_marginLeft="15dp">
+
+        <ImageView
+            android:id="@+id/iv_item_shop_promotion_record_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_item_shop_promotion_record_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/fl_item_shop_promotion_record_image"
+        android:textColor="#ff333333"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_item_shop_promotion_record_unitprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_shop_promotion_record_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@+id/fl_item_shop_promotion_record_image"
+        android:textColor="#ffff6d63"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_item_shop_promotion_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_shop_promotion_record_name"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@+id/tv_item_shop_promotion_record_unitprice"
+        android:textColor="#ff999999"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_item_shop_promotion_record_paytype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_shop_promotion_record_unitprice"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/fl_item_shop_promotion_record_image"
+        android:textColor="#ff999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_item_shop_promotion_record_paytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_shop_promotion_record_unitprice"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_item_shop_promotion_record_paytype"
+        android:textColor="#ff999999"
+        android:textSize="12sp" />
+
+</RelativeLayout>

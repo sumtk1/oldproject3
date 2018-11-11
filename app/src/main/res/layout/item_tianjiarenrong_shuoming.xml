@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19px"
+        android:layout_marginRight="19px"
+        android:background="@drawable/bg_circular_white">
+
+        <ImageView
+            android:id="@+id/im_tianjianeirong_tupian"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30px"
+            android:layout_height="500px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px" />
+
+        <TextView
+            android:id="@+id/tv_tianjianeirong_miaoshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_tianjianeirong_tupian"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:textColor="#666666"
+            android:textSize="30px" />
+
+    </RelativeLayout>
+
+</LinearLayout>

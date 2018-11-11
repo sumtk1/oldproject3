@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include10"
+        layout="@layout/include_head" />
+
+    <com.gloiot.hygoSupply.ui.widget.RefreshLayout
+        android:id="@+id/wode_shouyi_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include10"
+        android:layout_marginTop="26px">
+
+        <ListView
+            android:id="@+id/lv_yunfei_liebiao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/include10"
+            android:divider="@color/cl_background"
+            android:dividerHeight="26px" />
+    </com.gloiot.hygoSupply.ui.widget.RefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_yunfei_tianjia"
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cl_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@mipmap/ic_yunfei_tianjia"
+            android:drawablePadding="26px"
+            android:text="新增模块"
+            android:textColor="#ff6666"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+</RelativeLayout>

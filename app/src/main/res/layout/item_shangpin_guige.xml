@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/cl_background"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/ll_item_shangpin_guige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:background="@color/cl_white"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:paddingLeft="30px">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="96px"
+            android:background="@color/cl_white">
+
+            <TextView
+                android:id="@+id/tv_item_shangpin_yanse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="fill_vertical"
+                android:text="颜色"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+
+            <include layout="@layout/include_view" />
+
+            <TextView
+                android:id="@+id/tv_item_shangpin_guige_yanse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="130px"
+                android:layout_toRightOf="@+id/tv_item_shangpin_yanse"
+                android:background="@null"
+                android:gravity="fill_vertical"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_item_shangpin_shangchuan_chicun"
+            android:layout_width="wrap_content"
+            android:layout_height="96px"
+            android:background="@color/cl_white">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="fill_vertical"
+                android:text="尺寸"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+
+            <include layout="@layout/include_view" />
+
+            <TextView
+                android:id="@+id/tv_item_shangpin_guige_chicun"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="130px"
+                android:layout_toEndOf="@+id/textView13"
+                android:layout_toRightOf="@+id/textView13"
+                android:background="@null"
+                android:gravity="fill_vertical"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="96px"
+            android:background="@color/cl_white">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="fill_vertical"
+                android:text="供货价"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+
+            <include layout="@layout/include_view" />
+
+            <TextView
+                android:id="@+id/tv_item_shangpin_guige_jiesuanjia"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="100px"
+                android:layout_toEndOf="@+id/textView16"
+                android:layout_toRightOf="@+id/textView16"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="96px"
+            android:background="@color/cl_white">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="fill_vertical"
+                android:text="建议零售价"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+
+            <include layout="@layout/include_view" />
+
+            <TextView
+                android:id="@+id/tv_item_shangpin_guige_jiage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40px"
+                android:layout_toEndOf="@+id/textView14"
+                android:layout_toRightOf="@+id/textView14"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:background="@color/cl_white">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="库存"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_item_shangpin_guige_kucun"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="130px"
+                android:layout_toEndOf="@+id/textView15"
+                android:layout_toRightOf="@+id/textView15"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/cl_text"
+                android:textSize="32px" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_item_shangpin_guige_shanchu"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@mipmap/ic_shangpin_guige_delete" />
+</RelativeLayout>

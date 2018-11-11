@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180px"
+    android:background="@color/cl_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_pop_zonghe_paixu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cl_white"
+        android:paddingBottom="20px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="20px">
+
+        <TextView
+            android:id="@+id/tv_pop_zonghe_paixu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="综合排序"
+            android:textColor="@color/cl_E33333"
+            android:textSize="28px" />
+
+        <ImageView
+            android:id="@+id/iv_pop_zonghe_paixu"
+            android:layout_width="34px"
+            android:layout_height="22px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_xuanze" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pop_xinpin_youxian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cl_white"
+        android:paddingBottom="20px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="20px">
+
+        <TextView
+            android:id="@+id/tv_pop_xinpin_youxian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新品优先"
+            android:textColor="@color/cl_999999"
+            android:textSize="28px" />
+
+        <ImageView
+            android:id="@+id/iv_pop_xinpin_youxian"
+            android:layout_width="34px"
+            android:layout_height="22px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

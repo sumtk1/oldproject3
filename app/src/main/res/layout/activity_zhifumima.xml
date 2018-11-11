@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_head_wuxian" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="20px">
+
+        <LinearLayout
+            android:id="@+id/ll_creatGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cl_white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px">
+
+                <TextView
+                    android:id="@+id/tv_zfmm_shoujihao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:text="绑定手机号"
+                    android:textColor="@color/cl_333"
+                    android:textSize="16sp" />
+
+
+                <EditText
+                    android:id="@+id/et_zfmm_shojihao"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40px"
+                    android:layout_toRightOf="@+id/tv_zfmm_shoujihao"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:hint="自动获取绑定手机号"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="11"
+                    android:textColor="@color/cl_333333"
+                    android:textColorHint="@color/cl_999999"
+                    android:textSize="16sp" />
+
+                <View
+                    style="@style/heng_line"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="32px"
+                    android:background="@color/cl_eeeeee" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px">
+
+                <TextView
+                    android:id="@+id/tv_zfmm_yanzhengma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:text="验证码    "
+                    android:textColor="@color/cl_333"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_zfmm_huoqu_yzm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/cl_ff7f29"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_zfmm_yanzhengma"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40px"
+                    android:layout_toLeftOf="@+id/tv_zfmm_huoqu_yzm"
+                    android:layout_toRightOf="@+id/tv_zfmm_yanzhengma"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="11"
+                    android:textColor="@color/cl_333333"
+                    android:textSize="16sp" />
+
+                <View
+                    style="@style/heng_line"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="32px"
+                    android:background="@color/cl_eeeeee" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px">
+
+                <TextView
+                    android:id="@+id/tv_zfmm_zfmm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:text="支付密码"
+                    android:textColor="@color/cl_333"
+                    android:textSize="16sp" />
+
+
+                <EditText
+                    android:id="@+id/et_zfmm_mima"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40px"
+                    android:layout_toRightOf="@+id/tv_zfmm_zfmm"
+                    android:background="@null"
+                    android:hint="请设置支付密码 (6位数字) "
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="11"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+
+                <View
+                    style="@style/heng_line"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="32px"
+                    android:background="@color/cl_eeeeee" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px">
+
+                <TextView
+                    android:id="@+id/tv_zfmm_queren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center"
+                    android:text="确认密码"
+                    android:textColor="@color/cl_333"
+                    android:textSize="16sp" />
+
+
+                <EditText
+                    android:id="@+id/et_zfmm_queren"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40px"
+                    android:layout_toRightOf="@+id/tv_zfmm_queren"
+                    android:background="@null"
+                    android:hint="请再次输入支付密码"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="11"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_zfmm_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/cl_activity_newmain"
+            android:text="确 认"
+            android:textColor="@color/cl_white"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

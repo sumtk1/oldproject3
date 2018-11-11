@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mydialog_main"
+    android:layout_width="match_parent"
+    android:layout_height="366px"
+    android:background="@color/cl_white"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36px"
+        android:textColor="#000000"
+        android:text="请输入下架原因"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="58px"
+        android:layout_marginBottom="32px"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="66px"
+        >
+        <EditText
+            android:id="@+id/xiajia_input_ed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/editext_share_xiajia"
+            android:hint="请输入下架的原因"
+            android:textColorHint="#999999"
+            android:padding="20px"
+            android:textSize="28px"
+            android:textColor="#333333"
+            android:maxLength="50"
+            android:gravity="top"
+            android:maxLines="2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="0/50"
+            android:textColorHint="#999999"
+            android:textSize="22px"
+            android:layout_marginRight="20px"
+            android:layout_marginBottom="20px"
+            android:id="@+id/xiajia_zishu_txt"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="66px"
+        android:background="#e1e2e3"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textColor="#666666"
+            android:textSize="26px"
+            android:gravity="center"
+            android:id="@+id/xiajia_cancle_txt"
+            />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="50px"
+            android:background="#e1e2e3"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定下架"
+            android:textColor="#ff7f29"
+            android:textSize="26px"
+            android:gravity="center"
+            android:id="@+id/xiajia_sure_txt"
+            />
+    </LinearLayout>
+
+</LinearLayout>

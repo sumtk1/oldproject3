@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mydialog_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/mydialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_loading">
+
+        <ImageView
+            android:id="@+id/mydialog_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@null"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/mydialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mydialog_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="标题"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/mydialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mydialog_title"
+            android:layout_marginRight="-20px"
+            android:layout_toLeftOf="@+id/mydialog_title"
+            android:layout_toStartOf="@+id/mydialog_title"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="内容"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/mydialog_content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mydialog_custompanel"
+            android:layout_marginLeft="-20px"
+            android:layout_toEndOf="@+id/mydialog_title"
+            android:layout_toRightOf="@+id/mydialog_title"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="内容2"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/mydialog_custompanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mydialog_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <LinearLayout
+            android:id="@+id/mydialog_edittextlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mydialog_custompanel"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mydialog_content_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:lineSpacingExtra="10px"
+                android:paddingTop="10dp"
+                android:text="内容中间"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mydialog_buttonlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mydialog_edittextlist"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_mydialog_cancle"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="center"
+            android:src="@mipmap/ic_dialog_quxiao"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

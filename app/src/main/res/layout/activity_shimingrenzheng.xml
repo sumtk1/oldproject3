@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_bg_gray">
+
+    <include
+        android:id="@+id/include11"
+        layout="@layout/include_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include11"
+        android:background="@color/cl_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="97px"
+            android:layout_marginLeft="32px">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="真实姓名"
+                android:textColor="#333333"
+                android:textSize="32px" />
+
+            <EditText
+                android:id="@+id/et_real_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="41px"
+                android:layout_toRightOf="@+id/tv_name"
+                android:background="@null"
+                android:hint="请填写自己的真实姓名"
+                android:textColorHint="#999999"
+                android:textSize="32px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/cl_bg_gray" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="97px"
+            android:layout_marginLeft="32px">
+
+            <TextView
+                android:id="@+id/tv_sfz_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="身份证号"
+                android:textColor="#333333"
+                android:textSize="32px" />
+
+            <EditText
+                android:id="@+id/et_sfz_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="41px"
+                android:layout_toRightOf="@+id/tv_sfz_num"
+                android:background="@null"
+                android:hint="请填写自己的身份证号"
+                android:textColorHint="#999999"
+                android:textSize="32px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/cl_bg_gray" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/but_realname_tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="#cccccc"
+        android:text="提 交"
+        android:textColor="@color/cl_white"
+        android:textSize="32px" />
+
+
+</RelativeLayout>

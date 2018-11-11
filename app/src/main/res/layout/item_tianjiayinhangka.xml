@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_listcard"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/bg_bank_tianjia"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/im_tianjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_tianjia" />
+
+        <TextView
+            android:id="@+id/tv_tianjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16px"
+            android:layout_toRightOf="@+id/im_tianjia"
+            android:text="添加银行卡"
+            android:textColor="#000000"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+</LinearLayout>

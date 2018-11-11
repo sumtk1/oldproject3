@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="126px"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tv_tuijian_shijiejifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:text="+1000"
+            android:textColor="@color/cl_black"
+            android:textSize="30px" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_tuijian_time_shifen"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_tuijian_time_nianyue"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/tv_tuijian_time_nianyue"
+                android:gravity="center"
+                android:text="16:45"
+                android:textColor="@color/cl_666"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_tuijian_time_nianyue"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_tuijian_time_shifen"
+                android:gravity="center"
+                android:text="2016-5" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/relativeLayout8"
+            android:layout_alignBottom="@+id/relativeLayout8"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_tuijian_goumaixingming"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_tuijian_gonghuoshang1"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/tv_tuijian_gonghuoshang1"
+                android:gravity="center"
+                android:text="供货商"
+                android:textColor="@color/cl_black"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_tuijian_gonghuoshang1"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_below="@+id/tv_tuijian_goumaixingming"
+                android:gravity="center"
+                android:text="￥100"
+                android:textColor="@color/cl_black" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
